@@ -95,7 +95,7 @@ copyright 2006
   
 <div id="main">
     <div id="side">
-      <img src="../art/kontakt.jpg">
+      <img src="../art/referenzen.jpg">
     </div>
     <div id="content">
         <h2>Search Results</h2>
