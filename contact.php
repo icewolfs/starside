@@ -133,10 +133,12 @@ if ($_POST["submit"] == "1") {
   <div id="navbar">
     <div class="navsmall"></div>
     <div class="nav"><a class="navlink" href="index.php?lan=<?php echo $lan ?>"><?php echo $home_lan ?></a></div>
+    <div class="nav"><a class="navlink" href="blog/blog.php?lan=<?php echo $lan ?>"><?php echo $blog_lan ?></a></div>
     <div class="nav"><a class="navlink" href="cv.php?lan=<?php echo $lan ?>"><?php echo $cv_lan ?></a></div>
     <div class="nav"><a class="navlink" href="skills.php?lan=<?php echo $lan ?>"><?php echo $skills_lan ?></a></div>
     <div class="nav"><a class="navlink" href="references.php?lan=<?php echo $lan ?>"><?php echo $ref_lan ?></a></div>
     <div class="navactive"><a class="navlink" href="contact.php?lan=<?php echo $lan ?>"><?php echo $contact_lan ?></a></div>
+    <div class="nav"><a class="navlink" href="impressum.php?lan=<?php echo $lan ?>"><?php echo $impressum_lan ?></a></div>
   </div>
   
   <div id="lang">
@@ -167,47 +169,47 @@ if ($_POST["submit"] == "1") {
       
         <div class="contentInput">
           <div class="inputText"><?php echo $contact_descr['vname'] ?></div>
-          <div class="inputForm"><input type="text" name="vname" size="30" value="<?php echo $vname; ?>"></div>
+          <div class="inputForm"><input type="text" name="vname" size="50" value="<?php echo $vname; ?>"></div>
         </div>
         
         <div class="contentInput">
           <div class="inputText"><?php echo $contact_descr['nname'] ?></div>
-          <div class="inputForm"><input type="text" name="nname" size="30" value="<?php echo $nname; ?>"></div>
+          <div class="inputForm"><input type="text" name="nname" size="50" value="<?php echo $nname; ?>"></div>
         </div>
         
         <div class="contentInput">
           <div class="inputText"><?php echo $contact_descr['firma'] ?></div>
-          <div class="inputForm"><input type="text" name="firma" size="30" value="<?php echo $firma; ?>"></div>
+          <div class="inputForm"><input type="text" name="firma" size="50" value="<?php echo $firma; ?>"></div>
         </div>
         
         <div class="contentInput">
           <div class="inputText"><?php echo $contact_descr['homepage'] ?></div>
-          <div class="inputForm"><input type="text" name="homepage" size="30" value="<?php echo $homepage; ?>"></div>
+          <div class="inputForm"><input type="text" name="homepage" size="50" value="<?php echo $homepage; ?>"></div>
         </div>
         
         <div class="contentInput">
           <div class="inputText"><?php echo $contact_descr['strasse'] ?></div>
-          <div class="inputForm"><input type="text" name="strasse" size="30" value="<?php echo $strasse; ?>"></div>
+          <div class="inputForm"><input type="text" name="strasse" size="50" value="<?php echo $strasse; ?>"></div>
         </div>
         
         <div class="contentInput">
           <div class="inputText"><?php echo $contact_descr['plz'] ?>&nbsp;/&nbsp;<?php echo $contact_descr['ort'] ?></div>
-          <div class="inputForm"><input type="text" name="plz" size="5" value="<?php echo $plz; ?>">&nbsp;/&nbsp;<input type="text" name="ort" size="30" value="<?php echo $ort; ?>"></div>
+          <div class="inputForm"><input type="text" name="plz" size="5" value="<?php echo $plz; ?>">&nbsp;/&nbsp;<input type="text" name="ort" size="40" value="<?php echo $ort; ?>"></div>
         </div>
         
         <div class="contentInput">
           <div class="inputText"><?php echo $contact_descr['telefon'] ?></div>
-          <div class="inputForm"><input type="text" name="telefon" size="30" value="<?php echo $telefon; ?>"></div>
+          <div class="inputForm"><input type="text" name="telefon" size="50" value="<?php echo $telefon; ?>"></div>
         </div>
         
         <div class="contentInput">
           <div class="inputText"><?php echo $contact_descr['land'] ?></div>
-          <div class="inputForm"><input type="text" name="land" size="30" value="<?php echo $land; ?>"></div>
+          <div class="inputForm"><input type="text" name="land" size="50" value="<?php echo $land; ?>"></div>
         </div>
         
         <div class="contentInput">
           <div class="inputText"><?php echo $contact_descr['email'] ?></div>
-          <div class="inputForm"><input type="text" name="email" size="30" value="<?php echo $email; ?>"></div>
+          <div class="inputForm"><input type="text" name="email" size="50" value="<?php echo $email; ?>"></div>
         </div>
         
         <div class="contentInput">
@@ -217,7 +219,7 @@ if ($_POST["submit"] == "1") {
         
         <div class="contentInput">
           <div class="inputText"><?php echo $contact_descr['text'] ?></div>
-          <div class="inputForm"><textarea cols="30" rows="5" name="text" id="text" wrap="virtual"><?php echo $text; ?></textarea></div>
+          <div class="inputForm"><textarea cols="50" rows="5" name="text" id="text" wrap="virtual"><?php echo $text; ?></textarea></div>
         </div>
         
       </div>

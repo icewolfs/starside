@@ -8,14 +8,14 @@ body {
 }
 #body {
 	margin: 10px auto 0;
-	width: 700px;
+	width: 940px;
 	height: auto;
 	background-color: #ffffff;
 }
 #navbar {
 	clear: left;
 	float: left;
-	width: 700px;
+	width: 940px;
 	height: 22px;
 	background-color: #376894;
 }
@@ -55,7 +55,7 @@ body {
 }
 #header {
 	float: left;
-	width: 600px;
+	width: 840px;
 	height: 80px;
 	text-align: right;
 	background-color: #94B7D1;
@@ -73,7 +73,7 @@ body {
 #main {
 	float: left;
 	clear: left;
-	width: 700px;
+	width: 940px;
 	height: auto;
 	background-color: #79A5C6;
 }
@@ -92,12 +92,12 @@ body {
 }
 .project {
 	clear: both;
-	width: 590px;
+	width: 710px;
 	padding-top: 10px;
 	padding-right: 10px;
 }
 .projectTitle {
-	width: 470px;
+	width: 590px;
 	height: 20px;
 	padding-left: 120px;
 	font-weight: bold;
@@ -109,12 +109,12 @@ body {
 	text-align: right;
 }
 .projectContent {
-	width: 470px;
+	width: 590px;
 	background: url(../art/tablebackground.gif) #ffffff;
 }
 .projectText {
 	padding: 5px;
-	width: 280px;
+	width: 400px;
 	min-height: 100px;
 	height:auto !important;  /* für moderne Browser */
     height:100px;  /*für den IE */
@@ -126,7 +126,7 @@ body {
 #content {
 	margin-left: auto;
 	float: left;
-	width: 600px;
+	width: 840px;
 	height: auto;
 	background-color: #ffffff;
 	text-align: left;
@@ -166,7 +166,7 @@ body {
 .contentMainText {
 	float: left;
 	padding-left: 0px;
-	width: 380px;
+	width: 620px;
 	padding-bottom: 7px;
 }
 
@@ -174,7 +174,7 @@ body {
 	margin-left: 30px;
 	float: left;
 	height: auto;
-	width: 380px;
+	width: 620px;
 	background: url(../art/tablebackground.gif) #ffffff;
 }
 .contentInput {
@@ -183,7 +183,7 @@ body {
 	padding-top: 4px;
 	padding-bottom: 4px;
 	height: auto;
-	width: 360px;
+	width: 600px;
 	
 }
 .inputText {
@@ -202,20 +202,25 @@ body {
 	height: auto;
 	width: 160px;
 }
-.skillFrame {
-	float: left;
-	clear: both;
-	margin-left: 60px;
+.skillFrame, .skillNoFrame {
 	margin-top: 10px;
-	margin-bottom: 10px; 
-	margin-right: 50px;
-	padding-left: 40px;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	padding-right: 20px;
+	padding-left: 40px;
 	background: url(../art/tablebackground.gif) #ffffff;
 	height: auto;
 	width: 280px;
+}
+.skillFrame {
+    float: left;
+    clear: both;
+    margin-left: 60px;
+    margin-bottom: 10px; 
+    margin-right: 50px;
+}
+.skillNoFrame {
+	float: left;
 }
 .skillTitle {
 	float: left;

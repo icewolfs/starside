@@ -32,17 +32,19 @@ require_once('lang/lang_'.$lan.'.inc.php');
 
   <div id="navbar">
     <div class="navsmall"></div>
-    <div class="navactive"><a class="navlink" href="index.php?lan=<?php echo$lan ?>"><?php echo$home_lan ?></a></div>
-    <div class="nav"><a class="navlink" href="cv.php?lan=<?php echo$lan ?>"><?php echo$cv_lan ?></a></div>
-    <div class="nav"><a class="navlink" href="skills.php?lan=<?php echo$lan ?>"><?php echo$skills_lan ?></a></div>
-    <div class="nav"><a class="navlink" href="references.php?lan=<?php echo$lan ?>"><?php echo$ref_lan ?></a></div>
-    <div class="nav"><a class="navlink" href="contact.php?lan=<?php echo$lan ?>"><?php echo$contact_lan ?></a></div>
+    <div class="navactive"><a class="navlink" href="index.php?lan=<?php echo $lan ?>"><?php echo $home_lan ?></a></div>
+    <div class="nav"><a class="navlink" href="blog/blog.php?lan=<?php echo $lan ?>"><?php echo $blog_lan ?></a></div>
+    <div class="nav"><a class="navlink" href="cv.php?lan=<?php echo $lan ?>"><?php echo $cv_lan ?></a></div>
+    <div class="nav"><a class="navlink" href="skills.php?lan=<?php echo $lan ?>"><?php echo $skills_lan ?></a></div>
+    <div class="nav"><a class="navlink" href="references.php?lan=<?php echo $lan ?>"><?php echo $ref_lan ?></a></div>
+    <div class="nav"><a class="navlink" href="contact.php?lan=<?php echo $lan ?>"><?php echo $contact_lan ?></a></div>
+    <div class="nav"><a class="navlink" href="impressum.php?lan=<?php echo $lan ?>"><?php echo $impressum_lan ?></a></div>
   </div>
   
   <div id="lang">
       <div class="langText">
-        <a href="<?php echo$PHP_SELF ?>?lan=de"><img src="art/de.gif" border="<?php echo$border_de ?>"></a>
-        <a href="<?php echo$PHP_SELF ?>?lan=en"><img src="art/en.gif" border="<?php echo$border_en ?>"></a>
+        <a href="<?php echo $PHP_SELF ?>?lan=de"><img src="art/de.gif" border="<?php echo $border_de ?>"></a>
+        <a href="<?php echo $PHP_SELF ?>?lan=en"><img src="art/en.gif" border="<?php echo $border_en ?>"></a>
       </div>
   </div>
   <div id="header">
@@ -54,10 +56,10 @@ require_once('lang/lang_'.$lan.'.inc.php');
       <img src="art/home.jpg">
     </div>
     <div id="content">
-      <p><span class="contentTitle"><?php echo$home_title ?></span></p>
-      <p class="contentText"><?php echo$home_text1 ?></p>
-      <p class="contentText"><?php echo$home_text2 ?></p>
-      <p class="contentText"><?php echo$home_text3 ?></p>
+      <p><span class="contentTitle"><?php echo $home_title ?></span></p>
+      <p class="contentText"><?php echo $home_text1 ?></p>
+      <p class="contentText"><?php echo $home_text2 ?></p>
+      <p class="contentText"><?php echo $home_text3 ?></p>
     </div>
   </div>
   

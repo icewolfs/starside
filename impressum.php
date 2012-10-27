@@ -33,6 +33,7 @@ require_once('lang/lang_'.$lan.'.inc.php');
   <div id="navbar">
     <div class="navsmall"></div>
     <div class="nav"><a class="navlink" href="index.php?lan=<?php echo $lan ?>"><?php echo $home_lan ?></a></div>
+    <div class="nav"><a class="navlink" href="blog/blog.php?lan=<?php echo $lan ?>"><?php echo $blog_lan ?></a></div>
     <div class="nav"><a class="navlink" href="cv.php?lan=<?php echo $lan ?>"><?php echo $cv_lan ?></a></div>
     <div class="nav"><a class="navlink" href="skills.php?lan=<?php echo $lan ?>"><?php echo $skills_lan ?></a></div>
     <div class="nav"><a class="navlink" href="references.php?lan=<?php echo $lan ?>"><?php echo $ref_lan ?></a></div>
@@ -55,7 +56,7 @@ require_once('lang/lang_'.$lan.'.inc.php');
       <img src="art/home.jpg">
     </div>
     <div id="content">
-      <p><span class="contentTitle"><?php echo $impressum_title ?></span></p>
+      <!-- <p><span class="contentTitle"><?php echo $impressum_title1 ?></span></p>-->
       <p class="contentText"><?php echo $impressum_text1 ?></p>
       <p class="contentText"><?php echo $impressum_text2 ?></p>
       <p class="contentText"><?php echo $impressum_text3 ?></p>
