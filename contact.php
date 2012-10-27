@@ -1,9 +1,9 @@
 <?php
 /**
  * Starside.de - Kontakt
- * 
+ *
  * @package starside
- * 
+ *
  * @author Frank Sons
  * @author Frank(dot)Sons(at)starside(dot)de
  */
@@ -253,13 +253,6 @@ if ($_POST["submit"] == "1") {
     
   </div>
   
-</div>
+<?php
+include_once('footer.php');
 
-<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
-</script>
-<script type="text/javascript">
-_uacct = "UA-578641-1";
-urchinTracker();
-</script>
-</BODY>
-</HTML>

@@ -13,7 +13,7 @@ if (isset($_POST['submit']) ){ // Handle the form.
 
 
 // Function for escaping and trimming form data.
-    function escape_data ($data) { 
+    function escape_data ($data) {
         global $dbc;
         if (ini_get('magic_quotes_gpc')) {
             $data = stripslashes($data);
@@ -102,7 +102,7 @@ copyright 2006
         <p class="hr"></p>
 
 <?php
-//****GET ENTRIES FROM DATABASE***********************************************************    
+//****GET ENTRIES FROM DATABASE***********************************************************
 
 
 //Add the record to the database.
@@ -125,7 +125,7 @@ if (count($rows) != 1) {
         $ima = split(", ", $row[1]); //build array out of images list
         for ($i=0; $i<count($ima); $i++) {
             if ($imagesPerEntry == 1) {
-                if (!empty($ima[$i])) { 
+                if (!empty($ima[$i])) {
                     if (substr($ima[$i],-4) != '.pdf') { //filter out PDFs
                         $entry .= "<img src=\"blogImages/$ima[$i]\" class=\"im\" />\n";
                     } else { //handle PDFs
@@ -134,10 +134,10 @@ if (count($rows) != 1) {
                 }
             }
         }
-        //****************************************************************************************    
+        //****************************************************************************************
         
         
-        //****DISPLAY COMMENT*********************************************************************    
+        //****DISPLAY COMMENT*********************************************************************
         
         
         $com = nl2br($row[0]);
@@ -153,7 +153,7 @@ if (count($rows) != 1) {
         }
         $entry .= "<p class=\"comment\">$com</p>";
         
-        //****************************************************************************************    
+        //****************************************************************************************
         
         
         //****DISPLAY POSTED BY******************************************************************
@@ -201,15 +201,7 @@ $footer .= " <a href=\"$rssFileName\"><img src=\"im/rss.gif\" alt=\"super simple
       <p class="contentText"><?php echo $footer ?></p>
     </div>
   </div>
-</div>
-
 <?php mysql_close(); // Close the database connection. ?>
 
-<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
-</script>
-<script type="text/javascript">
-_uacct = "UA-578641-1";
-urchinTracker();
-</script>
-</BODY>
-</HTML>
+<?php
+include_once('../footer.php');

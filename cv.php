@@ -1,9 +1,9 @@
 <?php
 /**
  * Starside.de - Lebenslauf
- * 
+ *
  * @package starside
- * 
+ *
  * @author Frank Sons
  * @author Frank(dot)Sons(at)starside(dot)de
  */
@@ -75,20 +75,17 @@ require_once('lang/lang_'.$lan.'.inc.php');
       <div class="contentPreText">09/96 - 01/99</div>
       <div class="contentMainText"><?php echo $cv_job_training ?></div>
       
-	  <!-- <div class="contentPreText"><?php echo $since ?> 05/10</div> -->
       <div class="contentTitle"><?php echo $cv_jobs_title ?></div>
-	  <div class="contentPreText">08/11 - 01/13</div>
+      <div class="contentPreText">08/11 - 01/13</div>
       <div class="contentMainText"><?php echo $cv_jobs_bigpoint ?></div>
-  	  <div class="contentPreText">02/11 - 07/11</div>
+      <div class="contentPreText">02/11 - 07/11</div>
       <div class="contentMainText"><?php echo $cv_jobs_icans ?></div>
-	  <div class="contentPreText">05/10 - 01/11</div>
+      <div class="contentPreText">05/10 - 01/11</div>
       <div class="contentMainText"><?php echo $cv_jobs_arbeitslos_hh ?></div>
-	  <div class="contentPreText">03/09 - 04/10</div>
+      <div class="contentPreText">03/09 - 04/10</div>
       <div class="contentMainText"><?php echo $cv_jobs_modix ?></div>
       <div class="contentPreText">11/06 - 03/09</div>
       <div class="contentMainText"><?php echo $cv_jobs_dis ?></div>
-      <!--<div class="contentPreText"><?php echo $since ?> 11/06</div>
-      <div class="contentMainText"><?php echo $cv_jobs_ricoh ?></div>-->
       <div class="contentPreText">11/05 - 10/06</div>
       <div class="contentMainText"><?php echo $cv_jobs_benq ?></div>
       <div class="contentPreText">02/05 - 10/05</div>
@@ -103,11 +100,11 @@ require_once('lang/lang_'.$lan.'.inc.php');
       <div class="contentMainText"><?php echo $cv_job_tkis ?></div>
       
       <div class="contentTitle"><?php echo $cv_edu_title ?></div>
-	  <div class="contentPreText">2012</div>
+      <div class="contentPreText">2012</div>
       <div class="contentMainText"><?php echo $cv_phpsummit ?><br/><?php echo $cv_phpunconf12 ?></div>
-	  <div class="contentPreText">2011</div>
+      <div class="contentPreText">2011</div>
       <div class="contentMainText"><?php echo $cv_phpunconf11 ?><br/><?php echo $cv_zend ?></div>
-	  <div class="contentPreText">2009</div>
+      <div class="contentPreText">2009</div>
       <div class="contentMainText"><?php echo $cv_devdays ?></div>
       <div class="contentPreText">10/06 - 05/08</div>
       <div class="contentMainText"><?php echo $cv_ait_itprof ?></div>
@@ -127,9 +124,9 @@ require_once('lang/lang_'.$lan.'.inc.php');
       <div class="contentMainText"><?php echo $cv_java ?><br/><?php echo $cv_sql ?></div>
       
       <div class="contentTitle"><?php echo $cv_misc_title ?></div>
-	  <div class="contentPreText"><?php echo $cv_phpughh ?></div>
+      <div class="contentPreText"><?php echo $cv_phpughh ?></div>
       <div class="contentMainText"><?php echo $cv_phpughhorga ?></div>
-	  <div class="contentPreText"><?php echo $cv_presentations ?></div>
+      <div class="contentPreText"><?php echo $cv_presentations ?></div>
       <div class="contentMainText"><?php echo $cv_slideshare ?></div>
       <div class="contentPreText"><?php echo $cv_languages ?></div>
       <div class="contentMainText"><?php if ($lan == 'en') echo $cv_german.'<br/>'; ?><?php echo $cv_english ?></div>
@@ -138,14 +135,6 @@ require_once('lang/lang_'.$lan.'.inc.php');
       
     </div>
   </div>
-  
-</div>
 
-<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
-</script>
-<script type="text/javascript">
-_uacct = "UA-578641-1";
-urchinTracker();
-</script>
-</BODY>
-</HTML>
+<?php
+include_once('footer.php');

@@ -116,13 +116,27 @@ body {
 	padding: 5px;
 	width: 400px;
 	min-height: 100px;
-	height:auto !important;  /* für moderne Browser */
-    height:100px;  /*für den IE */
+	height:auto !important;  /* fÃ¼r moderne Browser */
+    height:100px;  /*fÃ¼r den IE */
 }
 .projectImg {
 	width: 180px;
 }
-
+#mainFooter {
+    margin-left: auto;
+    float: left;
+    width: 720px;
+    height: auto;
+    background-color: #ffffff;
+    text-align: left;
+    margin-left:100px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 120px;
+    font-size:9px;
+    color:#777;
+    border-top:1px dotted #FF6600;
+}
 #content {
 	margin-left: auto;
 	float: left;
@@ -206,18 +220,18 @@ body {
 	margin-top: 10px;
 	padding-top: 5px;
 	padding-bottom: 5px;
-	padding-right: 20px;
-	padding-left: 40px;
+	padding-right: 10px;
+	padding-left: 20px;
 	background: url(../art/tablebackground.gif) #ffffff;
 	height: auto;
-	width: 280px;
+	width: 250px;
 }
 .skillFrame {
     float: left;
     clear: both;
-    margin-left: 60px;
+    margin-left: 100px;
     margin-bottom: 10px; 
-    margin-right: 50px;
+    margin-right: 40px;
 }
 .skillNoFrame {
 	float: left;
@@ -272,5 +286,18 @@ a.navlink:visited	{ color:#FFFFFF;
 				font-weight: bold;
 				text-decoration:none;
 				}
+a.footerlink   {
+    color:#777;
+    text-decoration:none
+    }
+a.footerlink:hover     { color:#FF6600; 
+                text-decoration:underline;
+                }
+a.footerlink:active    { color:#777;
+                text-decoration:none;
+                }
+a.footerlink:visited   { color:#777;
+                text-decoration:none;
+                }
 .orange			{ color:#FF6600; }
 .fehler			{ color:#FF0000; }

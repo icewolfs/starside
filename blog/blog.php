@@ -22,7 +22,7 @@ $err = "the following errors occurred:\n";
 
     
 if(!empty($_POST['username'])){
-$_un = $_POST['username']; 
+$_un = $_POST['username'];
 }else{
 $err .= "Username was not set.\n";
 }
@@ -57,7 +57,7 @@ if(array_key_exists($_un, $users_login)){
 if($userPassed){//check the password and username
 
 // Function for escaping and trimming form data.
-    function escape_data ($data) { 
+    function escape_data ($data) {
         global $dbc;
         if (ini_get('magic_quotes_gpc')) {
             $data = stripslashes($data);
@@ -131,13 +131,13 @@ if($userPassed){//check the password and username
     }
     
 
-//****INSERT INTO DB***********************************************************************    
+//****INSERT INTO DB***********************************************************************
 
     if($_db_operation == 'insert'){
     //Add the record to the database.
     $query = "INSERT INTO $TABLENAME (comment, title, image, time, postedBy) VALUES ('$c', '$t', '$filename', '$OFFSETTIME', '$un' )";
     $result = @mysql_query($query);
-    echo '<h1>Comment added</h1>';    
+    echo '<h1>Comment added</h1>';
     }
     else if($_db_operation == 'update'){
     //Update the record to the database.
@@ -148,7 +148,7 @@ if($userPassed){//check the password and username
 
 
 
-//****UPLOAD IMAGES************************************************************************    
+//****UPLOAD IMAGES************************************************************************
     
     //split the filenames into an array
     $filesArray = preg_split("/, /", $filename);
@@ -171,25 +171,25 @@ if($userPassed){//check the password and username
         } //end of for loop
         
     } else { // If the query did not run OK.
-        echo '<p><font color="red">Your submission could not be processed due to a system error. We apologize for any inconvenience.</font></p>'; 
+        echo '<p><font color="red">Your submission could not be processed due to a system error. We apologize for any inconvenience.</font></p>';
         echo 'this is the error: '. mysql_error();
     }
 
-//refresh the page to clear out the POSTback    
+//refresh the page to clear out the POSTback
 
 }//end of username and password check
 else{
     echo '<p><font color="red">The Username/Password that you entered does not match.</font></p>';
 }
 
-//****GENERATE RSS FEED********************************************************************    
+//****GENERATE RSS FEED********************************************************************
 
 include('feed_maker.php');
 $makerss = new GenerateFeed;
 $genFile = $makerss->makeFeed($TABLENAME,$websiteRoot, $pageTitle, $rssDesc, $rssLink, $rssFileName);
 
 
-//*****************************************************************************************    
+//*****************************************************************************************
 
 } // End of the main Submit conditional.
 
@@ -263,7 +263,7 @@ copyright 2006
 
 <?php
 
-//****GET PAGE NUMBER********************************************************************    
+//****GET PAGE NUMBER********************************************************************
 
 if(isset($_GET['pg']) && $_GET['pg']>0){$page = $_GET['pg'];}else{$page=1;} //finds the page number from the URL
 $ePage = $page * $perPage; //tells the last posting on the page. (eg. 7 per page, page 2 the last posting is number 14)
@@ -273,13 +273,13 @@ $bPage = $ePage - $perPage; //counts back to the first listing on each page
 $pPage = $page -1; // previous page
 $nPage = $page +1; // next page
 
-//****************************************************************************************    
+//****************************************************************************************
 
 
-//****GET COUNT OF ENTRIES****************************************************************    
+//****GET COUNT OF ENTRIES****************************************************************
 
 
-// Query the database. 
+// Query the database.
 $query = "SELECT uid FROM $TABLENAME";
 $result = mysql_query ($query);
 $totally = 0;
@@ -287,9 +287,9 @@ while ($row = mysql_fetch_array($result, MYSQL_NUM)) {
     $totally += 1; //loop runs to count the total number of posts. This sets the page forward and back links. It knows the last page and first page.
 }
 
-//****************************************************************************************    
+//****************************************************************************************
 
-//****GET ENTRIES FROM DATABASE***********************************************************    
+//****GET ENTRIES FROM DATABASE***********************************************************
 
 //function for securing GET data
 function cleanEntry($_entry_str){
@@ -297,13 +297,13 @@ function cleanEntry($_entry_str){
     $_remove_chars = str_replace($_bad_chars, '', strtolower($_entry_str));
     $_remove_html = strip_tags($_remove_chars);
     if(is_numeric($_remove_html)){
-        return $_remove_html; 
+        return $_remove_html;
     }else{
         die('You must refer to entries using integers only');
     }
 }
 
-//if the GET var 'entry' is set, this is a permalink and we will only ask for 1 entry 
+//if the GET var 'entry' is set, this is a permalink and we will only ask for 1 entry
 if (isset($_GET['entry'])) {
     //set a var to check if we are in teh entry page view later
     $_entryview = true;
@@ -339,10 +339,10 @@ while ($row = mysql_fetch_array($result, MYSQL_NUM)) {
             }
         }
     }
-    //****************************************************************************************    
+    //****************************************************************************************
     
     
-    //****DISPLAY COMMENT*********************************************************************    
+    //****DISPLAY COMMENT*********************************************************************
     
     
     $com = nl2br($row[0]);
@@ -359,7 +359,7 @@ while ($row = mysql_fetch_array($result, MYSQL_NUM)) {
     }
     $entry .= "<p class=\"comment\">$com</p>";
     
-    //****************************************************************************************    
+    //****************************************************************************************
     
     
     
@@ -394,7 +394,7 @@ while ($row = mysql_fetch_array($result, MYSQL_NUM)) {
     echo $entryTitle;
     echo $entry;
     echo $entryComments;
-    echo $entryBreak; 
+    echo $entryBreak;
 }
 
 $footer = '';
@@ -425,15 +425,7 @@ $footer .= " <a href=\"$rssFileName\"><img src=\"im/rss.gif\" alt=\"super simple
       <p class="contentText"><?php echo $footer ?></p>
     </div>
   </div>
-</div>
-
 <?php mysql_close(); // Close the database connection. ?>
 
-<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
-</script>
-<script type="text/javascript">
-_uacct = "UA-578641-1";
-urchinTracker();
-</script>
-</BODY>
-</HTML>
+<?php
+include_once('../footer.php');

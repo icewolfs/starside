@@ -1,9 +1,9 @@
 <?php
 /**
  * Starside.de - Kenntnisse
- * 
+ *
  * @package starside
- * 
+ *
  * @author Frank Sons
  * @author Frank(dot)Sons(at)starside(dot)de
  */
@@ -149,13 +149,6 @@ require_once('lang/lang_'.$lan.'.inc.php');
     </div>
   </div>
   
-</div>
+<?php
+include_once('footer.php');
 
-<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
-</script>
-<script type="text/javascript">
-_uacct = "UA-578641-1";
-urchinTracker();
-</script>
-</BODY>
-</HTML>
