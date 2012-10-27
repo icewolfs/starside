@@ -38,7 +38,6 @@ require_once('lang/lang_'.$lan.'.inc.php');
     <div class="navactive"><a class="navlink" href="skills.php?lan=<?php echo $lan ?>"><?php echo $skills_lan ?></a></div>
     <div class="nav"><a class="navlink" href="references.php?lan=<?php echo $lan ?>"><?php echo $ref_lan ?></a></div>
     <div class="nav"><a class="navlink" href="contact.php?lan=<?php echo $lan ?>"><?php echo $contact_lan ?></a></div>
-    <div class="nav"><a class="navlink" href="impressum.php?lan=<?php echo $lan ?>"><?php echo $impressum_lan ?></a></div>
   </div>
   
   <div id="lang">

@@ -19,7 +19,7 @@ a:hover{color:#777;}
 	margin-top:10px;
 	text-align:center;
 	align:center;
-	width:600px;
+	width:480px;
 }
 
 #content {
@@ -47,7 +47,7 @@ p{margin:3px 0 0 0 ;}
 	padding-left:120px;
 }
 
-.hr{border-bottom:1px dotted #FF6600; width:840px;margin:4px 0 8px 0;}
+.hr{border-bottom:3px dotted #FF6600; width:720px;margin:4px 0 8px 0;}
 
 .userComment{
 	background-color:#f2f2f2;

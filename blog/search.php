@@ -79,7 +79,6 @@ copyright 2006
     <div class="nav"><a class="navlink" href="../skills.php?lan=<?php echo $lan ?>"><?php echo $skills_lan ?></a></div>
     <div class="nav"><a class="navlink" href="../references.php?lan=<?php echo $lan ?>"><?php echo $ref_lan ?></a></div>
     <div class="nav"><a class="navlink" href="../contact.php?lan=<?php echo $lan ?>"><?php echo $contact_lan ?></a></div>
-    <div class="nav"><a class="navlink" href="../impressum.php?lan=<?php echo $lan ?>"><?php echo $impressum_lan ?></a></div>
   </div>
 
   <div id="lang">
@@ -112,24 +111,23 @@ $result = @mysql_query ($query);
 $counter = @mysql_query ($query);
 $rows = mysql_fetch_array($counter, MYSQL_NUM);
 
-$entry = '';
+$allEntries = '';
 
 if (count($rows) != 1) {
     while ($row = mysql_fetch_array($result, MYSQL_NUM)) {
         $dateTime = strtolower($row[3]); //makes the AM PM lowercase. CSS is set to Capitalize the date later
         
         //anchor tag set for easier linking
-        $entryTitle = "<a name=\"{$row[4]}\"></a><h1 class=\"title\">{$row[2]}</h1>\n<p class=\"time\">$dateTime</p>";
+        $allEntries .= "<a name=\"{$row[4]}\"></a><h1 class=\"title\">{$row[2]}</h1>\n<p class=\"time\">$dateTime</p>";
 
-        $entry = '';
         $ima = split(", ", $row[1]); //build array out of images list
         for ($i=0; $i<count($ima); $i++) {
             if ($imagesPerEntry == 1) {
                 if (!empty($ima[$i])) {
                     if (substr($ima[$i],-4) != '.pdf') { //filter out PDFs
-                        $entry .= "<img src=\"blogImages/$ima[$i]\" class=\"im\" />\n";
+                        $allEntries .= "<img src=\"blogImages/$ima[$i]\" class=\"im\" />\n";
                     } else { //handle PDFs
-                        $entry .= "<a href=\"blogImages/$ima[$i]\" target=\"_blank\"><img src=\"im/pdfIcon.gif\" border=\"0\" class=\"im\"/> $ima[$i]</a>";
+                        $allEntries .= "<a href=\"blogImages/$ima[$i]\" target=\"_blank\"><img src=\"im/pdfIcon.gif\" border=\"0\" class=\"im\"/> $ima[$i]</a>";
                     }
                 }
             }
@@ -151,7 +149,7 @@ if (count($rows) != 1) {
                 }
             }
         }
-        $entry .= "<p class=\"comment\">$com</p>";
+        $allEntries .= "<p class=\"comment\">$com</p>";
         
         //****************************************************************************************
         
@@ -160,7 +158,7 @@ if (count($rows) != 1) {
         
         //if multiUsers is turned on in settings.php, display the username that wrote the entry
         if($MULTIUSERS){
-            $entry .= "<p class=\"postedBy\">Posted By: $row[6]</p>";
+            $allEntries .= "<p class=\"postedBy\">Posted By: $row[6]</p>";
         }
         
         //***************************************************************************************
@@ -170,25 +168,21 @@ if (count($rows) != 1) {
         //****DISPLAY COMMENTS*******************************************************************
         
         //you must have comments turned on (in settings.php) for this to display
-        $entryComments = '';
         if($COMMENTS){
             if($row[5] != 0){
-                $entryComments .= "<p class=\"userComment\"><a href=\"javascript:void();\" onclick=\"window.open('comments.php?entry=$row[4]', 'Comments', 'width=490,height=350,location=no,toolbars=no,status=no scrollbars=yes');\">$row[5] comments</a> | <a href=\"javascript:void();]\" onclick=\"window.open('comments.php?entry=$row[4]', 'Comments', 'width=490,height=350,location=no,toolbars=no,status=no, scrollbars=yes');\">Comment</a><a class=\"permalink\" href=\"$blogPageName?entry=$row[4]\">permalink</a></p>";
+                $allEntries .= "<p class=\"userComment\"><a href=\"javascript:void();\" onclick=\"window.open('comments.php?entry=$row[4]', 'Comments', 'width=490,height=350,location=no,toolbars=no,status=no scrollbars=yes');\">$row[5] comments</a> | <a href=\"javascript:void();]\" onclick=\"window.open('comments.php?entry=$row[4]', 'Comments', 'width=490,height=350,location=no,toolbars=no,status=no, scrollbars=yes');\">Comment</a><a class=\"permalink\" href=\"$blogPageName?entry=$row[4]\">permalink</a></p>";
             }else{
-                $entryComments .= "<p class=\"userComment\">$row[5] comments | <a href=\"javascript:void();\" onclick=\"window.open('comments.php?entry=$row[4]', 'Comments', 'width=490,height=350,location=no,toolbars=no,status=no, scrollbars=yes');\">Comment</a><a class=\"permalink\" href=\"$blogPageName?entry=$row[4]\">permalink</a></p>";
+                $allEntries .= "<p class=\"userComment\">$row[5] comments | <a href=\"javascript:void();\" onclick=\"window.open('comments.php?entry=$row[4]', 'Comments', 'width=490,height=350,location=no,toolbars=no,status=no, scrollbars=yes');\">Comment</a><a class=\"permalink\" href=\"$blogPageName?entry=$row[4]\">permalink</a></p>";
             }
         }
         
         //***************************************************************************************
         
-        $entryBreak = "<p class=\"hr\"></p>"; //this is the break line. set it's appearance in the CSS file.
+        $allEntries .= "<p class=\"hr\"></p>"; //this is the break line. set it's appearance in the CSS file.
         
     }
     
-    echo $entryTitle;
-    echo $entry;
-    echo $entryComments;
-    echo $entryBreak;
+    echo $allEntries;
     
 
 } else {
