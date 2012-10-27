@@ -1,7 +1,15 @@
+<?php
+$uri_impressum = 'impressum.php';
+
+// small workaround to check for blog directory
+if (strpos($_SERVER['PHP_SELF'], 'blog') !== false) {
+    $uri_impressum = '../' . $uri_impressum;
+}
+?>
   
   <div id="main">
     <div id="mainFooter">
-        <a class="footerlink" href="impressum.php"><?php echo $impressum_lan ?></a>
+        <a class="footerlink" href="<?php echo $uri_impressum ?>"><?php echo $impressum_lan ?></a>
     </div>
   </div>
   

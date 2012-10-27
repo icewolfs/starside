@@ -160,7 +160,7 @@ if ($_POST["submit"] == "1") {
       
       <div class="contentSmallText"><p><?php echo $contact_txt ?></p><p><?php echo $contact_required ?></p></div>
       
-      <form action="<?php echo $PHP_SELF; ?>" method="post">
+      <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
       <input type='hidden' name='lan' value='<?php echo $lan ?>'>
       <input type="hidden" name="submit" value="1">
       
