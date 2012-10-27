@@ -1,0 +1,271 @@
+body {
+	font-family: Verdana,Arial,sans-serif;
+	font-size:11px;
+	color:black;
+	padding: 0;
+	margin: 0;
+	background: url(../art/background.gif) top left #ffffff;
+}
+#body {
+	margin: 10px auto 0;
+	width: 700px;
+	height: auto;
+	background-color: #ffffff;
+}
+#navbar {
+	clear: left;
+	float: left;
+	width: 700px;
+	height: 22px;
+	background-color: #376894;
+}
+.nav, .navsmall, .navactive {
+	margin-left: auto;
+	float: left;
+	width: 120px;
+	height: 16px;
+	background-color: #376894;
+	border-bottom: 2px solid #ffffff;
+	padding-top: 4px;
+}
+.navsmall {
+	width: 100px;
+}
+.navactive {
+	background-color: #94B7D1;
+	border-bottom: 2px solid #94B7D1;
+}
+#lang {
+	clear: left;
+	float: left;
+	width: 100px;
+	height: 80px;
+	text-align: right;
+	background-color: #79A5C6;
+	border-bottom: 2px solid #FF6600
+}
+.langText {
+	font-size:20px;
+	color:#FFFFFF;
+	margin-bottom: 0px;
+	padding-top: 50px;
+	padding-bottom: 5px;
+	padding-right: 5px;
+	font-weight: bold;
+}
+#header {
+	float: left;
+	width: 600px;
+	height: 80px;
+	text-align: right;
+	background-color: #94B7D1;
+	border-bottom: 2px solid #FF6600
+}
+.headerText {
+	font-size:20px;
+	color:#FFFFFF;
+	margin-bottom: 0px;
+	padding-top: 50px;
+	padding-bottom: 5px;
+	padding-right: 10px;
+	font-weight: bold;
+}
+#main {
+	float: left;
+	clear: left;
+	width: 700px;
+	height: auto;
+	background-color: #79A5C6;
+}
+#side {
+	margin-left: auto;
+	float: left;
+	width: 100px;
+	height: auto;
+	background-color: #79A5C6;
+}
+
+.project, .projectTitle, .projectDate, .projectContent, .projectText, .projectImg {
+	float: left;
+	margin-left: auto;
+	height: auto;
+}
+.project {
+	clear: both;
+	width: 590px;
+	padding-top: 10px;
+	padding-right: 10px;
+}
+.projectTitle {
+	width: 470px;
+	height: 20px;
+	padding-left: 120px;
+	font-weight: bold;
+	color: #FF6600;
+}
+.projectDate {
+	width: 110px;
+	padding-right: 10px;
+	text-align: right;
+}
+.projectContent {
+	width: 470px;
+	background: url(../art/tablebackground.gif) #ffffff;
+}
+.projectText {
+	padding: 5px;
+	width: 280px;
+	min-height: 100px;
+	height:auto !important;  /* für moderne Browser */
+    height:100px;  /*für den IE */
+}
+.projectImg {
+	width: 180px;
+}
+
+#content {
+	margin-left: auto;
+	float: left;
+	width: 600px;
+	height: auto;
+	background-color: #ffffff;
+	text-align: left;
+	padding-bottom: 50px;
+	padding-top: 50px;
+}
+.contentTitle, .contentText, .contentSmallText, .contentList, .contentPreText, .contentMainText {
+	padding-bottom: 4px;
+	padding-left: 120px;
+	padding-right: 80px;
+	line-height:16px;
+}
+.contentTitle {
+	padding-top: 25px;
+	clear: both;
+	font-weight: bold;
+	color: #FF6600;
+}
+.contentSmallText {
+	padding-top: 10px;
+	clear: both;
+	padding-right: 200px;
+}
+.contentList {
+	clear: both;
+	padding-right: 200px;
+}
+.contentPreText {
+	clear: both;
+	float: left;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 7px;
+	text-align: right;
+	width: 100px;
+}
+.contentMainText {
+	float: left;
+	padding-left: 0px;
+	width: 380px;
+	padding-bottom: 7px;
+}
+
+.contentInputFrame {
+	margin-left: 30px;
+	float: left;
+	height: auto;
+	width: 380px;
+	background: url(../art/tablebackground.gif) #ffffff;
+}
+.contentInput {
+	padding-left: 10px;
+	float: left;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	height: auto;
+	width: 360px;
+	
+}
+.inputText {
+	float: left;
+	text-align: right;
+	width: 70px;
+	padding-right: 10px;
+}
+.inputForm {
+	float: left;
+	width: 280px;
+}
+.contentMeebo {
+	float: left;
+	padding-left: 5px;
+	height: auto;
+	width: 160px;
+}
+.skillFrame {
+	float: left;
+	clear: both;
+	margin-left: 60px;
+	margin-top: 10px;
+	margin-bottom: 10px; 
+	margin-right: 50px;
+	padding-left: 40px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-right: 20px;
+	background: url(../art/tablebackground.gif) #ffffff;
+	height: auto;
+	width: 280px;
+}
+.skillTitle {
+	float: left;
+	height: auto;
+	width: 300px;
+	font-weight: bold;
+	color: #FF6600;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.skill {
+	float: left;
+	clear: left;
+	height: auto;
+	width: 150px;
+}
+.skillValue {
+	float: left;
+	height: auto;
+	width: 100px;
+}
+
+a {
+	color:black;
+	text-decoration:none;
+}
+a:hover	{ 
+	color:#FF6600;
+	}
+a:active {
+	color:black;
+	}
+a:visited	{
+	color:black;
+	vertical-align: baseline;
+	}
+a.navlink	{
+	color:#FFFFFF;
+	font-weight: bold;
+	text-decoration:none
+	}
+a.navlink:hover		{ color:#FF6600; 
+				text-decoration:underline;
+				}
+a.navlink:active	{ color:#FFFFFF;
+				text-decoration:none;
+				}
+a.navlink:visited	{ color:#FFFFFF;
+				font-weight: bold;
+				text-decoration:none;
+				}
+.orange			{ color:#FF6600; }
+.fehler			{ color:#FF0000; }
