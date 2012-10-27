@@ -12,7 +12,7 @@ for the blog.
 
 require_once('includes/header.php'); // include global header
 
-if(!isset($submit)){require_once('../settings.php'); /*include global prefs*/}
+if(!isset($submit)){require_once('../config/settings.php'); /*include global prefs*/}
 
 
 //****HANDLE FORM*****************************************************************************

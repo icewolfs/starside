@@ -15,14 +15,14 @@ which should auto-increment.
 
 ***************************************************/
 
-require_once('../settings.php'); //include global prefs
+require_once('../config/settings.php'); //include global prefs
 require_once('includes/header.php'); // include global header
 
 //get the table name. If it is unset, display an error and die
 if(isset($_GET['table'])){$table_name = $_GET['table'];}else{die('you must choose a table name. Please <a href="chooseTable.php">go back</a> and choose one.');}
 
 
-require_once ('../sqlStrings.php'); // Connect to the database.
+require_once ('../config/sqlStrings.php'); // Connect to the database.
 
 
 if(isset($_GET['set'])){ //see if the SET is set

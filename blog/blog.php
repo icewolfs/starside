@@ -256,11 +256,9 @@ copyright 2006
       <img src="../art/kontakt.jpg">
     </div>
     <div id="content">
-      <p>
       <form action="search.php" method="post" name="search" id="searchBar" >
           <input type="text" name="search" /><input type="submit" name="submit" value="search" />
       </form>
-      </p>
 
 
 <?php
@@ -306,22 +304,19 @@ function cleanEntry($_entry_str){
 }
 
 //if the GET var 'entry' is set, this is a permalink and we will only ask for 1 entry 
-if(isset($_GET['entry'])){
+if (isset($_GET['entry'])) {
     //set a var to check if we are in teh entry page view later
     $_entryview = true;
     //clean the entry number to remove possible security issues
     $_perma_entry = cleanEntry($_GET['entry']);
     
-    # TODO: 24h time
-    $query = "SELECT comment, image, title, DATE_FORMAT(time, '%M %d, %Y %h:%i%p') AS time, uid, comments, postedBy, time AS ts FROM $TABLENAME WHERE uid = '$_perma_entry' LIMIT 1";
+    $query = "SELECT comment, image, title, DATE_FORMAT(time, '%M %d, %Y %H:%i') AS time, uid, comments, postedBy, time AS ts FROM $TABLENAME WHERE uid = '$_perma_entry' LIMIT 1";
 
-}else{
+} else {
 
     $_entryview = false;
 
-    # TODO: 24h time
-    $query = "SELECT comment, image, title, DATE_FORMAT(time, '%M %d, %Y %h:%i%p') AS time, uid, comments, postedBy, time AS ts FROM $TABLENAME ORDER BY ts DESC LIMIT $bPage,$perPage ";
-
+    $query = "SELECT comment, image, title, DATE_FORMAT(time, '%M %d, %Y %H:%i') AS time, uid, comments, postedBy, time AS ts FROM $TABLENAME ORDER BY ts DESC LIMIT $bPage,$perPage ";
 }
 
 
@@ -329,10 +324,9 @@ $result = mysql_query ($query);
 while ($row = mysql_fetch_array($result, MYSQL_NUM)) {
     $dateTime = strtolower($row[3]); //makes the AM PM lowercase. CSS is set to Capitalize the date later
 
-    $entryTitle  = "<a id=\"{$row[4]}\"></a><p class=\"time\">$dateTime</p>"; //anchor tag set for easier linking
-    $entryTitle .= "<h1 class=\"title\">{$row[2]}</h1>\n";
-//     echo "<a id=\"{$row[4]}\"></a><p class=\"time\">$dateTime</p>"; //anchor tag set for easier linking
-//     echo "<h1 class=\"title\">{$row[2]}</h1>\n";
+    //anchor tag set for easier linking
+    $entryTitle  = "<a id=\"{$row[4]}\"></a><h1 class=\"title\">{$row[2]}</h1>\n<p class=\"time\">$dateTime</p>";
+//     $entryTitle .= "";
 
     $entry = '';
     $ima = preg_split("/, /", $row[1]); //build array out of images list
@@ -340,10 +334,8 @@ while ($row = mysql_fetch_array($result, MYSQL_NUM)) {
         if(!empty($ima[$i])) {
             if(substr($ima[$i],-4) != '.pdf'){ //filter out PDFs
                 $entry .= "<img src=\"blogImages/$ima[$i]\" class=\"im\" alt=\"$ima[$i]\" />\n</br>\n";
-//                 echo "<img src=\"blogImages/$ima[$i]\" class=\"im\" alt=\"$ima[$i]\" />\n</br>\n";
             } else { //handle PDFs
                 $entry .= "<a href=\"blogImages/$ima[$i]\" target=\"_blank\"><img src=\"im/pdfIcon.gif\" border=\"0\" class=\"im\" alt=\"PDF\" /> $ima[$i]</a>";
-//                 echo "<a href=\"blogImages/$ima[$i]\" target=\"_blank\"><img src=\"im/pdfIcon.gif\" border=\"0\" class=\"im\" alt=\"PDF\" /> $ima[$i]</a>";
             }
         }
     }
@@ -366,7 +358,6 @@ while ($row = mysql_fetch_array($result, MYSQL_NUM)) {
         }
     }
     $entry .= "<p class=\"comment\">$com</p>";
-//     echo "<p class=\"comment\">$com</p>";
     
     //****************************************************************************************    
     
@@ -377,7 +368,6 @@ while ($row = mysql_fetch_array($result, MYSQL_NUM)) {
     //if multiUsers is turned on in settings.php, display the username that wrote the entry
     if($MULTIUSERS){
         $entry .= "<p class=\"postedBy\">Posted By: $row[6]</p>";
-//         echo "<p class=\"postedBy\">Posted By: $row[6]</p>";
     }
     
     //***************************************************************************************
@@ -391,16 +381,13 @@ while ($row = mysql_fetch_array($result, MYSQL_NUM)) {
     if($COMMENTS){
         if($row[5] != 0){
             $entryComments .= "<p class=\"userComment\"><a href=\"javascript:void(function(){var super = 'simple';});\" onclick=\"window.open('comments.php?entry=$row[4]', 'Comments', 'width=490,height=350,location=no,toolbars=no,status=no scrollbars=yes');\">$row[5] comments</a> | <a href=\"javascript:void(function(){var super = 'simple';});\" onclick=\"window.open('comments.php?entry=$row[4]', 'Comments', 'width=490,height=350,location=no,toolbars=no,status=no, scrollbars=yes');\">Comment</a><a class=\"permalink\" href=\"$blogPageName?entry=$row[4]\">permalink</a></p>";
-//             echo "<p class=\"userComment\"><a href=\"javascript:void(function(){var super = 'simple';});\" onclick=\"window.open('comments.php?entry=$row[4]', 'Comments', 'width=490,height=350,location=no,toolbars=no,status=no scrollbars=yes');\">$row[5] comments</a> | <a href=\"javascript:void(function(){var super = 'simple';});\" onclick=\"window.open('comments.php?entry=$row[4]', 'Comments', 'width=490,height=350,location=no,toolbars=no,status=no, scrollbars=yes');\">Comment</a><a class=\"permalink\" href=\"$blogPageName?entry=$row[4]\">permalink</a></p>";
         }else{
             $entryComments .= "<p class=\"userComment\">$row[5] comments | <a href=\"javascript:void(function(){var super = 'simple';});\" onclick=\"window.open('comments.php?entry=$row[4]', 'Comments', 'width=490,height=350,location=no,toolbars=no,status=no, scrollbars=yes');\">Comment</a><a class=\"permalink\" href=\"$blogPageName?entry=$row[4]\">permalink</a></p>";
-//             echo "<p class=\"userComment\">$row[5] comments | <a href=\"javascript:void(function(){var super = 'simple';});\" onclick=\"window.open('comments.php?entry=$row[4]', 'Comments', 'width=490,height=350,location=no,toolbars=no,status=no, scrollbars=yes');\">Comment</a><a class=\"permalink\" href=\"$blogPageName?entry=$row[4]\">permalink</a></p>";
         }
     }
     
     //***************************************************************************************
 
-//     echo "<p class=\"hr\"></p>"; //this is the break line. set it's appearance in the CSS file.
     $entryBreak = "<p class=\"hr\"></p>"; //this is the break line. set it's appearance in the CSS file.
 
     # temp output, TODO: format css
@@ -410,37 +397,29 @@ while ($row = mysql_fetch_array($result, MYSQL_NUM)) {
     echo $entryBreak; 
 }
 
-$footer = "<div id=\"footer\">";
+$footer = '';
 
 if(!$_entryview){ //if not the entry view, show pagination
     $pages = ceil($totally/$perPage); //divides the total posts by the posts per page then rounds up. This sets the total pages.
     
     //if on page 1, dont give a page back link
     if($page != 1){
-//         echo '<p><a href="'.$blogPageName.'?pg='.$pPage.'">&laquo;</a>&nbsp;&nbsp;&nbsp;';
         $footer .= '<p><a href="'.$blogPageName.'?pg='.$pPage.'">&laquo;</a>&nbsp;&nbsp;&nbsp;';
     }
 
-//     echo  $pages." total pages";
     $footer .= $pages." total pages";
     
     //if on the last page, dont link ahead
     if($page != $pages && $totally != 0){
-//         echo '&nbsp;&nbsp;&nbsp;<a href="'.$blogPageName.'?pg='.$nPage.'">&raquo;</a></p><p>&nbsp;</p>';
         $footer .= '&nbsp;&nbsp;&nbsp;<a href="'.$blogPageName.'?pg='.$nPage.'">&raquo;</a></p><p>&nbsp;</p>';
     }
 }else{ //this is an entry page
-//     echo "<p><a href=\"$blogPageName\">View all entries&raquo;</a></p>";
     $footer .= "<p><a href=\"$blogPageName\">View all entries&raquo;</a></p>";
 }
 
-// echo "<br /><a href=\"http://www.supersimple.org\"><img src=\"im/ss.gif\" alt=\"super simple blog script\" border=\"0\" /></a>";
-// echo " <a href=\"$rssFileName\"><img src=\"im/rss.gif\" alt=\"super simple RSS script\" border=\"0\" /></a>";
-// echo "</div>";
 
 $footer .= "<br /><a href=\"http://www.supersimple.org\"><img src=\"im/ss.gif\" alt=\"super simple blog script\" border=\"0\" /></a>";
 $footer .= " <a href=\"$rssFileName\"><img src=\"im/rss.gif\" alt=\"super simple RSS script\" border=\"0\" /></a>";
-$footer .= "</div>";
 ?>
 
       <p class="contentText"><?php echo $footer ?></p>

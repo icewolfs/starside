@@ -10,10 +10,10 @@ var.
 
 ***************************************************/
 
-require_once('../settings.php'); //include global prefs
+require_once('../config/settings.php'); //include global prefs
 require_once('includes/header.php'); // include global header
 
-require_once ('../sqlStrings.php'); // Connect to the database.
+require_once ('../config/sqlStrings.php'); // Connect to the database.
 
 $result = mysql_list_tables(DB_NAME);
 $num_rows = mysql_num_rows($result);

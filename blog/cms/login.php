@@ -1,6 +1,6 @@
 <?php	
 //include the global settings
-require_once('../settings.php');
+require_once('../config/settings.php');
 
 
 //hold the target url

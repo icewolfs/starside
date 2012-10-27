@@ -8,7 +8,7 @@ It will not allow you to edit the primary key.
 
 ***************************************************/
 
-require_once('../settings.php'); //include global prefs
+require_once('../config/settings.php'); //include global prefs
 require_once('includes/header.php'); // include global header
 include('classes/cmsClasses.php'); //include the DB classes
 
@@ -20,7 +20,7 @@ if(isset($_GET['table'])){
 	die('you must choose a table name. Please <a href="chooseTable.php">go back</a> and choose one.');
 }
 
-require_once ('../sqlStrings.php'); // Connect to the database.
+require_once ('../config/sqlStrings.php'); // Connect to the database.
 
 
 

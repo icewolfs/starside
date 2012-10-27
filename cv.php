@@ -48,7 +48,7 @@ require_once('lang/lang_'.$lan.'.inc.php');
       </div>
   </div>
   <div id="header">
-      <div class="headerText"><?php echo strtoupper($sv_lan) ?></div>
+      <div class="headerText"><?php echo strtoupper($cv_lan) ?></div>
   </div>
   
   <div id="main">

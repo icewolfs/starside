@@ -8,7 +8,7 @@ page that they are looking for.
 
 ***************************************************/
 
-require_once('../settings.php'); //include global prefs
+require_once('../config/settings.php'); //include global prefs
 require_once('includes/header.php'); // include global header
 require_once('includes/footer.php');
 ?>

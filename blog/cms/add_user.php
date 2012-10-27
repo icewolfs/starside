@@ -11,7 +11,7 @@ constants list.
 *********************************************/
 
 require_once('includes/header.php'); // include global header
-require_once('../settings.php');
+require_once('../config/settings.php');
 
 if(isset($submit)){
 	

@@ -8,8 +8,8 @@ It will not allow you to edit the primary key.
 
 ***************************************************/
 
-include("../settings.php");
-include("../sqlStrings.php");
+include("../config/settings.php");
+include("../config/sqlStrings.php");
 
 if(isset($_GET['colName'])){
 $_this_col = $_GET['colName'];

@@ -20,7 +20,7 @@ if(!session_is_registered('passed')){
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
  	<title><?=$pageTitle?></title>
- 	<style type="text/css" media="all">@import "../blogStyles.css";</style>
+ 	<style type="text/css" media="all">@import "../../css/blogStyles.css";</style>
 	<script type="text/javascript" src="js/inits.js"></script>
 </head>
 <body>
