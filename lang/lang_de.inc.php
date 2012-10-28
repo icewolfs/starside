@@ -114,7 +114,7 @@ $sk_lang = 'Programmier-/Scriptsprachen';
 $sk_db = 'Datenbanken';
 $sk_cms = 'CMS/eCommerce';
 $sk_frameworks = 'Frameworks';
-$sk_ide = 'Entwicklungsumgebugen / Tools';
+$sk_ide = 'IDEs / Server / Tools';
 $sk_misc = 'Sonstiges';
 
 // References

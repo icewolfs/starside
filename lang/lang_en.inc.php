@@ -67,7 +67,7 @@ $cv_jobs_dis  = 'Software developer for <a href="http://www.dis-ag.de" target="_
 $cv_jobs_dis .= $cv_jobs_ricoh;
 
 $cv_jobs_modix  = 'Java Software Architect at <a href="http://www.modix.de" target="_blank"><span class="orange">&gt;</span>&nbsp;Modix&nbsp;GmbH</a>.<br>';
-$cv_jobs_modix .= 'Creation of a new Java department in D&uuml;sseldorf. Responsible for writing Java and PHP concepts and development for existing Java applications. Additional introduction of new technologies, e.g. Unit Testing and managing Code Reviews.'; 
+$cv_jobs_modix .= 'Creation of a new Java department in D&uuml;sseldorf. Responsible for writing Java and PHP concepts and development for existing Java applications. Additional introduction of new technologies, e.g. Unit Testing and managing Code Reviews.';
 
 $cv_jobs_icans  = 'Project Lead Web Development at <a href="http://www.icans-gmbh.com/" target="_blank"><span class="orange">&gt;</span>&nbsp;ICANS&nbsp;GmbH</a> in Hamburg.<br>';
 $cv_jobs_icans .= 'Project management and developing of PHP B2B Projects and creating a REST Webservice API for the associate company <a href="http://www.pokerstrategy.com/" target="_blank"><span class="orange">&gt;</span>&nbsp;PokerStrategy.com</a>.';
@@ -116,7 +116,7 @@ $sk_lang = 'Programming and Script languages';
 $sk_db = 'Databases';
 $sk_cms = 'CMS/eCommerce';
 $sk_frameworks = 'Frameworks';
-$sk_ide = 'IDEs / Tools';
+$sk_ide = 'IDEs / Server / Tools';
 $sk_misc = 'Miscellaneous';
 
 // References
@@ -138,7 +138,7 @@ $ridp_img   = 'ricoh_ridp.jpg';
 
 $contest_title = 'Ricoh & Sun Java Platform Programming Contest';
 $contest_text  = 'Technical support for a student Java programming contest based on the Ricoh SDK/J for Multi-Function-Devices/Printer.<br>';
-$contest_text .= 'Erstellung geeigneter und aussagekräftiger Software Bewertungskriterien zur Beurteilung der Applikation durch Faktoren wie Code, Dokumentation, Design Pattern und OOD/OOP.<br>';
+$contest_text .= 'Erstellung geeigneter und aussagekrï¿½ftiger Software Bewertungskriterien zur Beurteilung der Applikation durch Faktoren wie Code, Dokumentation, Design Pattern und OOD/OOP.<br>';
 $contest_text .= 'Creating reasonable software judging criterias for the applications. Judging is based on code, documentation, design patterns and OOD/OOP.';
 $contest_date  = '2006-2008';
 $contest_url   = 'http://edu.ricoh-developer.com';

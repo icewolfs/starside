@@ -58,57 +58,69 @@ require_once('lang/lang_'.$lan.'.inc.php');
       
       <div class="skillFrame">
         <div class="skillTitle"><?php echo $sk_lang ?></div>
-        <div class="skill">Java</div>
-        <div class="skillValue"><?php echo $sk_very_good ?></div>
-        <div class="skill">PHP</div>
-        <div class="skillValue"><?php echo $sk_very_good ?></div>
         <div class="skill">C#</div>
         <div class="skillValue"><?php echo $sk_good ?></div>
-        <div class="skill">SQL</div>
+        <div class="skill">CSS</div>
+        <div class="skillValue"><?php echo $sk_basic ?></div>
+        <div class="skill">HTML</div>
+        <div class="skillValue"><?php echo $sk_basic ?></div>
+        <div class="skill">Java / Java EE</div>
         <div class="skillValue"><?php echo $sk_very_good ?></div>
         <div class="skill">JavaScript</div>
         <div class="skillValue"><?php echo $sk_good ?></div>
-        <div class="skill">HTML</div>
-        <div class="skillValue"><?php echo $sk_basic ?></div>
-        <div class="skill">CSS</div>
-        <div class="skillValue"><?php echo $sk_basic ?></div>
-        <div class="skill">XML/XSL</div>
+        <div class="skill">PHP 5</div>
         <div class="skillValue"><?php echo $sk_good ?></div>
+        <div class="skill">Perl</div>
+        <div class="skillValue"><?php echo $sk_basic ?></div>
+        <div class="skill">SQL</div>
+        <div class="skillValue"><?php echo $sk_very_good ?></div>
       </div>
       
       <div class="skillNoFrame">
         <div class="skillTitle"><?php echo $sk_frameworks ?></div>
+        <div class="skill">GWT (ext)</div>
+        <div class="skillValue"><?php echo $sk_good ?></div>
+        <div class="skill">Hibernate / NHibernate</div>
+        <div class="skillValue"><?php echo $sk_good ?></div>
         <div class="skill">JUnit/PHPUnit</div>
         <div class="skillValue"><?php echo $sk_very_good ?></div>
         <div class="skill">Log4j/log4php</div>
         <div class="skillValue"><?php echo $sk_good ?></div>
-        <div class="skill">Hibernate / NHibernate</div>
-        <div class="skillValue"><?php echo $sk_good ?></div>
-        <div class="skill">xhprof profiling</div>
-        <div class="skillValue"><?php echo $sk_very_good ?></div>
+        <div class="skill">Spring</div>
+        <div class="skillValue"><?php echo $sk_basic ?></div>
         <div class="skill">Zend Framework</div>
         <div class="skillValue"><?php echo $sk_very_good ?></div>
       </div>
       
       <div class="skillFrame">
         <div class="skillTitle"><?php echo $sk_ide ?></div>
-        <div class="skill">Eclipse/Zend Studio</div>
-        <div class="skillValue"><?php echo $sk_very_good ?></div>
-        <div class="skill">Visual Studio</div>
-        <div class="skillValue"><?php echo $sk_good ?></div>
+        <div class="skill">Ant</div>
+        <div class="skillValue"><?php echo $sk_basic ?></div>
         <div class="skill">Apache</div>
         <div class="skillValue"><?php echo $sk_good ?></div>
-        <div class="skill">Tomcat</div>
-        <div class="skillValue"><?php echo $sk_good ?></div>
+        <div class="skill">Composer</div>
+        <div class="skillValue"><?php echo $sk_basic ?></div>
+        <div class="skill">Eclipse/Zend Studio</div>
+        <div class="skillValue"><?php echo $sk_very_good ?></div>
         <div class="skill">JBoss</div>
         <div class="skillValue"><?php echo $sk_good ?></div>
-        <div class="skill">xDebug</div>
+        <div class="skill">Netbeans</div>
+        <div class="skillValue"><?php echo $sk_basic ?></div>
+        <div class="skill">Tomcat</div>
+        <div class="skillValue"><?php echo $sk_good ?></div>
+        <div class="skill">Visual Studio</div>
+        <div class="skillValue"><?php echo $sk_good ?></div>
+        <div class="skill">Xdebug</div>
+        <div class="skillValue"><?php echo $sk_very_good ?></div>
+        <div class="skill">xhprof profiling</div>
         <div class="skillValue"><?php echo $sk_very_good ?></div>
       </div>
       
       
       <div class="skillNoFrame">
         <div class="skillTitle"><?php echo $sk_db ?></div>
+        <div class="skill">MsSQL</div>
+        <div class="skillValue"><?php echo $sk_basic ?></div>
         <div class="skill">MySQL</div>
         <div class="skillValue"><?php echo $sk_very_good ?></div>
         <div class="skill">Oracle</div>
@@ -119,6 +131,8 @@ require_once('lang/lang_'.$lan.'.inc.php');
       
       <div class="skillFrame">
         <div class="skillTitle"><?php echo $sk_misc ?></div>
+        <div class="skill">Ajax</div>
+        <div class="skillValue"><?php echo $sk_basic ?></div>
         <div class="skill">CVS / SVN</div>
         <div class="skillValue"><?php echo $sk_very_good ?></div>
         <div class="skill">Git</div>
@@ -128,6 +142,10 @@ require_once('lang/lang_'.$lan.'.inc.php');
         <div class="skill">REST</div>
         <div class="skillValue"><?php echo $sk_good ?></div>
         <div class="skill">SOAP</div>
+        <div class="skillValue"><?php echo $sk_good ?></div>
+        <div class="skill">UML</div>
+        <div class="skillValue"><?php echo $sk_very_good ?></div>
+        <div class="skill">XML/XSL</div>
         <div class="skillValue"><?php echo $sk_good ?></div>
       </div>
       
