@@ -120,12 +120,41 @@ $sk_misc = 'Sonstiges';
 // References
 $ref_title = 'Hier finden Sie eine Auswahl an Projekten, an denen ich in der Vergangenheit mitgewirkt habe. Die nicht verlinkten Seiten sind nicht mehr online verf&uuml;gbar oder nicht offen zug&auml;nglich.';
 
+$pit_title = 'Partner Integration Service';
+$pit_text  = 'Verantwortlich für Entwicklung und Konzeption eines modularen Konfigurationstools in PHP5 (Zend Framework) zur Verwaltung von Partner zugeh&ouml;rigen Spieledaten. Als Abl&ouml;sung eines legacy Projektes standen Usability, Wart- und Erweiterbarkeit, sowie Performance im Vordergrund.<br>';
+$pit_text .= 'Durch die modulare Entwicklung dient das Tool mittlerweile als framework f&uuml;r alle neuen Konfigurationstools im Bigpoint Umfeld.';
+$pit_date  = '2011-2012';
+$pit_url   = '';
+$pit_img   = '';
+
+$free50_title = 'Pokerstrategy Free $50 Administration';
+$free50_text  = 'Agile Projekt- und Teamleitung f&uuml;r ein B2B Projekt in PHP zur Verbesserung der Administration von Pokerr&auml;men und dem sogenannten "Free $50" Prozess im Pokerstrategy Backend. ';
+$free50_date  = '2011';
+$free50_url   = '';
+$free50_img   = '';
+
+$vis_title = 'Modix Vehicle Information Service (VIS)';
+$vis_text  = 'Entwicklung und Projektleitung f&uuml;r ein Java Tool, welches regelm&auml;ssig Daten aus Europas gr&ouml;&szlig;ten Automobildatenbanken (DAT und Schwacke) in das Modix eigene Datensystem importiert. ';
+$vis_text .= 'Diese Daten werden in der Modix Plattform zur Auswahl und Erkennung aller vorhandenen Automobiltypen und Ausstattungen verwendet.';
+$vis_date  = '2009-2010';
+$vis_url   = '';
+$vis_img   = '';
+
+$photoservice_title = 'Modix Photoservice';
+$photoservice_text  = 'Pflege und Weiterentwicklung eines Online Photoservices mit Java und GWT-Ext als Dienstleistungstool f&uuml;r Fotografen und Gebrauchtwagenh&auml;ndler. ';
+$photoservice_text .= 'H&auml;ndler k&ouml;nnen Auftr&auml;ge einstellen, welche Fotografen dann gesammelt im Tool abfragen und dort dann auch sp&auml;ter die Bilder hochladen k&ouml;nnen.';
+$photoservice_date  = '2009-2010';
+$photoservice_url   = '';
+$photoservice_img   = '';
+
+
 $innoris_title = '';
 $innoris_text  = '<br>';
 $innoris_text .= '';
 $innoris_date  = '2007-2008';
 $innoris_url   = '';
 $innoris_img   = '';
+
 
 $ridp_title = 'Ricoh Developer Program (RiDP) Support';
 $ridp_text  = 'Unterst&uuml;tzung des RiDP Supports durch Entwicklung von JavaME Beispielanwendungen (Xlet und Servlet/OSGi). Diese Anwendungen werden zur Analyse und Reproduktion von Bugs und Supportproblemen auf den Ricoh Multi-Funktions-Druckern genutzt.';
@@ -156,14 +185,14 @@ $grt_img   = '';
 $cc_title = 'Call Center Service Tool';
 $cc_text  = 'Erstellung eines PHP Webservices (SOAP) f&uuml;r das globale BenQ Call Center. Mittels des Webservices k&ouml;nnen die aktuellen Software Versionen f&uuml;r Service und Operator abgefragt werden.';
 $cc_date  = '2005-2006';
-$cc_url   = 'http://icm-km4.erlm.siemens.de/srvs/php/srt_callcenter.php';
+$cc_url   = '';
 $cc_img   = 'srt.jpg';
 
 $grm_title = 'Global Repair Management';
 $grm_text  = 'Pflege und Weiterentwicklung der GRM Website in PHP. Die Website beinhaltet verschiedenste Informationen f&uuml;r Partner Firmen, sowie globale Reports der GRT Daten.<br>';
 $grm_text .= 'Der Admin Bereich beinhaltet die komplette Userverwaltung f&uuml;r die Partner und GRT.';
 $grm_date  = '2005-2006';
-$grm_url   = 'http://www.global-repair-management.com';
+$grm_url   = '';
 $grm_img   = 'grm_web.jpg';
 
 $kt_title = 'KoelnTicket.de';
@@ -184,7 +213,7 @@ $dm_title = 'Deutsche Post Direktmarketing Shop';
 $dm_text  = 'Entwicklung und Pflege eines Shops f&uuml;r die Deutsche Post Direktmarketing, sowie weiterer kleinerer Post Shops in Java/JSP.<br>';
 $dm_text .= 'Bestellung diverser Direktmarketing Literatur und kostenloser Brosch&uuml;ren m&ouml;glich, inklusive Warenkorbfunktionalit&auml;t.';
 $dm_date  = '2001-2003';
-$dm_url   = 'https://www.efiliale.de/dmshop/popup_application/popup_dm_shop.html';
+$dm_url   = '';
 $dm_img   = 'dm_katalog.jpg';
 
 $kanban_title = 'Deutsche Post eBusiness / eKanban';
@@ -221,7 +250,7 @@ $inhouse_text  = 'Entwicklung von zwei Applikationen in Java/JSP, Daten sind in 
 $inhouse_text .= 'Die Standortsuche ist eine PLZ-Suche &uuml;ber eine Liste mit vorgegebenen "In Haus Service-Center" Standorten.<br>';
 $inhouse_text .= 'Im Produktberater werden mittels einer internen Matrix dem Kunden eine oder mehrere L&ouml;sungen angezeigt.';
 $inhouse_date  = '2001-2002';
-$inhouse_url   = 'http://www.deutschepost.de/inhausservice';
+$inhouse_url   = '';
 $inhouse_img   = 'ihc_produktberater.jpg';
 
 $productprice_title = 'Deutsche Post Produkte & Preise';
@@ -242,7 +271,7 @@ $citi_title = 'CitiBank Versicherung';
 $citi_text  = 'Entwicklung verschiedener Rentenrechner f&uuml;r die CiV Versicherung.<br>';
 $citi_text .= 'Im Zuge der Rister-Rente wurden mehrere Formulare in Java entwickelt, welche die zu erwartende Rente des Kunden berechnen k&ouml;nnen.';
 $citi_date  = '2000-2001';
-$citi_url   = 'http://www.civ-versicherung.de';
+$citi_url   = '';
 $citi_img   = 'civ-rente.jpg';
 
 $pb_title = 'Postbank Versicherung';

@@ -122,6 +122,33 @@ $sk_misc = 'Miscellaneous';
 // References
 $ref_title = 'Here you can find a small collection of relevant projects. Websites without links are either not online anymore or not open to the public.';
 
+$pit_title = 'Partner Integration Service';
+$pit_text  = 'Responsible for Concepts, architecture and development for a module based configuration tool with PHP 5 (Zend Framework) for administration of all partner associated game data. In order to relief a legacy software the main focus was on usability, maintainability, expandability and performance.<br>';
+$pit_text .= 'Due to the modulare architecture, the tool now serves as base for all new administrative configuration tools within Bigpoint.';
+$pit_date  = '2011-2012';
+$pit_url   = '';
+$pit_img   = '';
+
+$free50_title = 'Pokerstrategy Free $50 Administration';
+$free50_text  = 'Agile project and team lead in a B2B project with PHP. The project was started to improve the Pokerstrategy backend administration of poker rooms and the "Free $50" process.';
+$free50_date  = '2011';
+$free50_url   = '';
+$free50_img   = '';
+
+$vis_title = 'Modix Vehicle Information Service (VIS)';
+$vis_text  = 'New development and project lead for a Java tool, that regulary imports data from the biggest european car databases (DAT and Schwacke) into the Modix data system. ';
+$vis_text .= 'This data is by the Modix plattform to select and identify every possible car types and configurations.';
+$vis_date  = '2009-2010';
+$vis_url   = '';
+$vis_img   = '';
+
+$photoservice_title = 'Modix Photoservice';
+$photoservice_text  = 'Development and maintenance of an online photoservice in Java and GWT-Ext. The service enables car dealers to add order for freelance photographers who can check and process these orders ';
+$photoservice_text .= 'directly online. Afterwards they can also directly upload the pictures for the dealers online.';
+$photoservice_date  = '2009-2010';
+$photoservice_url   = '';
+$photoservice_img   = '';
+
 $innoris_title = '';
 $innoris_text  = '<br>';
 $innoris_text .= '';
@@ -160,14 +187,14 @@ $grt_img   = '';
 $cc_title = 'Call Center Service Tool';
 $cc_text  = 'Developing a PHP WebService (SOAP) for the global BenQ Call Center. The WebService can be used to get the current software versions for Operator and Service';
 $cc_date  = '2005-2006';
-$cc_url   = 'http://icm-km4.erlm.siemens.de/srvs/php/srt_callcenter.php';
+$cc_url   = '';
 $cc_img   = 'srt.jpg';
 
 $grm_title = 'Global Repair Management';
 $grm_text  = 'Development and maintenance of the GRM Website in PHP. The Website provides a lot of different informations for partner companies as well as global reports of the GRT data.<br>';
 $grm_text .= 'The admin area includes the complete User administration for partner companies and GRT';
 $grm_date  = '2005-2006';
-$grm_url   = 'http://www.global-repair-management.com';
+$grm_url   = '';
 $grm_img   = 'grm_web.jpg';
 
 $kt_title = 'KoelnTicket.de';
@@ -188,7 +215,7 @@ $dm_title = 'Deutsche Post Direct Marketing Shop';
 $dm_text  = 'Development and maintenance of Deutsche Post Direct Marketing Shop and several smaller shops in Java/JSP.<br>';
 $dm_text .= 'It\'s possible to order various Direct Marketing literature and several gratis booklets.<br>Including a shopping cart functionality.';
 $dm_date  = '2001-2003';
-$dm_url   = 'https://www.efiliale.de/dmshop/popup_application/popup_dm_shop.html';
+$dm_url   = '';
 $dm_img   = 'dm_katalog.jpg';
 
 $kanban_title = 'Deutsche Post eBusiness / eKanban';
@@ -225,7 +252,7 @@ $inhouse_text  = 'Development of two Java/JSP applications, data is stored in Or
 $inhouse_text .= 'The location search is a zip search on a list with predefined "In Haus Service Center" locations.<br>';
 $inhouse_text .= 'The product advisor shows the customer one or more solutions using an internal matrix.';
 $inhouse_date  = '2001-2002';
-$inhouse_url   = 'http://www.deutschepost.de/inhausservice';
+$inhouse_url   = '';
 $inhouse_img   = 'ihc_produktberater.jpg';
 
 $productprice_title = 'Deutsche Post Products & Prices';
@@ -246,7 +273,7 @@ $citi_title = 'CitiBank Insurance';
 $citi_text  = 'Development of several pension calculators for CiV Insurance.<br>';
 $citi_text .= 'Several Java and Perl forms had been developed in course of the "Rister-Rente", to calculate the expected pension for each customer.';
 $citi_date  = '2000-2001';
-$citi_url   = 'http://www.civ-versicherung.de';
+$citi_url   = 'e';
 $citi_img   = 'civ-rente.jpg';
 
 $pb_title = 'Postbank Insurance';

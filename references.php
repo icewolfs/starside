@@ -57,6 +57,98 @@ require_once('lang/lang_'.$lan.'.inc.php');
       <p class="contentText"><?php echo $ref_title ?></p>
       
       <!-- start new project -->
+      <?php $project = 'pit'; ?>
+      <div class="project">
+        <div class="projectTitle">
+      <?php if (${$project.'_url'} != null && ${$project.'_url'} != "") { ?> <a href="<?php echo ${$project.'_url'} ?>" target="_blank"><span class="orange">&gt;&nbsp;<?php echo ${$project.'_title'} ?></span></a>
+      <?php } else { ?> <?php echo ${$project.'_title'} ?> <?php } ?>
+        </div>
+        <div class="projectDate"><?php echo ${$project.'_date'} ?></div>
+        <div class="projectContent">
+          <div class="projectText"><?php echo ${$project.'_text'} ?></div>
+          <div class="projectImg">
+        <?php if (${$project.'_img'} != null && ${$project.'_img'} != "") { ?>
+          <?php if (${$project.'_url'} != null && ${$project.'_url'} != "") { ?>
+            <a href="<?php echo ${$project.'_url'} ?>" target="_blank"><img src="art/referenzen/<?php echo ${$project.'_img'} ?>" width="180" border="0" alt=""></a>
+          <?php } else { ?>
+            <img src="art/referenzen/<?php echo ${$project.'_img'} ?>" width="180" border="0" alt="">
+          <?php }
+           } ?>
+          </div>
+        </div>
+      </div>
+      <!-- end project <?php echo $project ?>-->
+      
+      <!-- start new project -->
+      <?php $project = 'free50'; ?>
+      <div class="project">
+        <div class="projectTitle">
+      <?php if (${$project.'_url'} != null && ${$project.'_url'} != "") { ?> <a href="<?php echo ${$project.'_url'} ?>" target="_blank"><span class="orange">&gt;&nbsp;<?php echo ${$project.'_title'} ?></span></a>
+      <?php } else { ?> <?php echo ${$project.'_title'} ?> <?php } ?>
+        </div>
+        <div class="projectDate"><?php echo ${$project.'_date'} ?></div>
+        <div class="projectContent">
+          <div class="projectText"><?php echo ${$project.'_text'} ?></div>
+          <div class="projectImg">
+        <?php if (${$project.'_img'} != null && ${$project.'_img'} != "") { ?>
+          <?php if (${$project.'_url'} != null && ${$project.'_url'} != "") { ?>
+            <a href="<?php echo ${$project.'_url'} ?>" target="_blank"><img src="art/referenzen/<?php echo ${$project.'_img'} ?>" width="180" border="0" alt=""></a>
+          <?php } else { ?>
+            <img src="art/referenzen/<?php echo ${$project.'_img'} ?>" width="180" border="0" alt="">
+          <?php }
+           } ?>
+          </div>
+        </div>
+      </div>
+      <!-- end project <?php echo $project ?>-->
+      
+      <!-- start new project -->
+      <?php $project = 'vis'; ?>
+      <div class="project">
+        <div class="projectTitle">
+      <?php if (${$project.'_url'} != null && ${$project.'_url'} != "") { ?> <a href="<?php echo ${$project.'_url'} ?>" target="_blank"><span class="orange">&gt;&nbsp;<?php echo ${$project.'_title'} ?></span></a>
+      <?php } else { ?> <?php echo ${$project.'_title'} ?> <?php } ?>
+        </div>
+        <div class="projectDate"><?php echo ${$project.'_date'} ?></div>
+        <div class="projectContent">
+          <div class="projectText"><?php echo ${$project.'_text'} ?></div>
+          <div class="projectImg">
+        <?php if (${$project.'_img'} != null && ${$project.'_img'} != "") { ?>
+          <?php if (${$project.'_url'} != null && ${$project.'_url'} != "") { ?>
+            <a href="<?php echo ${$project.'_url'} ?>" target="_blank"><img src="art/referenzen/<?php echo ${$project.'_img'} ?>" width="180" border="0" alt=""></a>
+          <?php } else { ?>
+            <img src="art/referenzen/<?php echo ${$project.'_img'} ?>" width="180" border="0" alt="">
+          <?php }
+           } ?>
+          </div>
+        </div>
+      </div>
+      <!-- end project <?php echo $project ?>-->
+      
+      <!-- start new project -->
+      <?php $project = 'photoservice'; ?>
+      <div class="project">
+        <div class="projectTitle">
+      <?php if (${$project.'_url'} != null && ${$project.'_url'} != "") { ?> <a href="<?php echo ${$project.'_url'} ?>" target="_blank"><span class="orange">&gt;&nbsp;<?php echo ${$project.'_title'} ?></span></a>
+      <?php } else { ?> <?php echo ${$project.'_title'} ?> <?php } ?>
+        </div>
+        <div class="projectDate"><?php echo ${$project.'_date'} ?></div>
+        <div class="projectContent">
+          <div class="projectText"><?php echo ${$project.'_text'} ?></div>
+          <div class="projectImg">
+        <?php if (${$project.'_img'} != null && ${$project.'_img'} != "") { ?>
+          <?php if (${$project.'_url'} != null && ${$project.'_url'} != "") { ?>
+            <a href="<?php echo ${$project.'_url'} ?>" target="_blank"><img src="art/referenzen/<?php echo ${$project.'_img'} ?>" width="180" border="0" alt=""></a>
+          <?php } else { ?>
+            <img src="art/referenzen/<?php echo ${$project.'_img'} ?>" width="180" border="0" alt="">
+          <?php }
+           } ?>
+          </div>
+        </div>
+      </div>
+      <!-- end project <?php echo $project ?>-->
+      
+      <!-- start new project -->
       <?php $project = 'contest'; ?>
       <div class="project">
         <div class="projectTitle">
@@ -264,7 +356,7 @@ require_once('lang/lang_'.$lan.'.inc.php');
       <!-- end project <?php echo $project ?>-->
       
       <!-- start new project -->
-      <!--<?php $project = 'kanban'; ?>
+      <?php $project = 'kanban'; ?>
       <div class="project">
         <div class="projectTitle">
       <?php if (${$project.'_url'} != null && ${$project.'_url'} != "") { ?> <a href="<?php echo ${$project.'_url'} ?>" target="_blank"><span class="orange">&gt;&nbsp;<?php echo ${$project.'_title'} ?></span></a>
@@ -283,7 +375,7 @@ require_once('lang/lang_'.$lan.'.inc.php');
            } ?>
           </div>
         </div>
-      </div>-->
+      </div>
       <!-- end project <?php echo $project ?>-->
       
       <!-- start new project -->
@@ -310,7 +402,7 @@ require_once('lang/lang_'.$lan.'.inc.php');
       <!-- end project <?php echo $project ?>-->
       
       <!-- start new project -->
-      <!--<?php $project = 'urlaub'; ?>
+      <?php $project = 'urlaub'; ?>
       <div class="project">
         <div class="projectTitle">
       <?php if (${$project.'_url'} != null && ${$project.'_url'} != "") { ?> <a href="<?php echo ${$project.'_url'} ?>" target="_blank"><span class="orange">&gt;&nbsp;<?php echo ${$project.'_title'} ?></span></a>
@@ -329,7 +421,7 @@ require_once('lang/lang_'.$lan.'.inc.php');
            } ?>
           </div>
         </div>
-      </div>-->
+      </div>
       <!-- end project <?php echo $project ?>-->
       
       <!-- start new project -->
@@ -402,7 +494,7 @@ require_once('lang/lang_'.$lan.'.inc.php');
       <!-- end project <?php echo $project ?>-->
       
       <!-- start new project -->
-      <!--<?php $project = 'sitemap'; ?>
+      <?php $project = 'sitemap'; ?>
       <div class="project">
         <div class="projectTitle">
       <?php if (${$project.'_url'} != null && ${$project.'_url'} != "") { ?> <a href="<?php echo ${$project.'_url'} ?>" target="_blank"><span class="orange">&gt;&nbsp;<?php echo ${$project.'_title'} ?></span></a>
@@ -421,7 +513,7 @@ require_once('lang/lang_'.$lan.'.inc.php');
            } ?>
           </div>
         </div>
-      </div>-->
+      </div>
       <!-- end project <?php echo $project ?>-->
       
       <!-- start new project -->
@@ -448,7 +540,7 @@ require_once('lang/lang_'.$lan.'.inc.php');
       <!-- end project <?php echo $project ?>-->
       
       <!-- start new project -->
-      <!--<?php $project = 'pb'; ?>
+      <?php $project = 'pb'; ?>
       <div class="project">
         <div class="projectTitle">
       <?php if (${$project.'_url'} != null && ${$project.'_url'} != "") { ?> <a href="<?php echo ${$project.'_url'} ?>" target="_blank"><span class="orange">&gt;&nbsp;<?php echo ${$project.'_title'} ?></span></a>
@@ -467,7 +559,7 @@ require_once('lang/lang_'.$lan.'.inc.php');
            } ?>
           </div>
         </div>
-      </div>-->
+      </div>
       <!-- end project <?php echo $project ?>-->
       
       <!-- start new project -->
