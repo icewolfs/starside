@@ -8,14 +8,14 @@ body {
 }
 #body {
 	margin: 10px auto 0;
-	width: 700px;
+	width: 820px;
 	height: auto;
 	background-color: #ffffff;
 }
 #navbar {
 	clear: left;
 	float: left;
-	width: 700px;
+	width: 820px;
 	height: 22px;
 	background-color: #376894;
 }
@@ -55,17 +55,17 @@ body {
 }
 #header {
 	float: left;
-	width: 600px;
+	width: 720px;
 	height: 80px;
 	text-align: right;
 	background-color: #94B7D1;
 	border-bottom: 2px solid #FF6600
 }
 .headerText {
-	font-size:20px;
+	font-size:28px;
 	color:#FFFFFF;
 	margin-bottom: 0px;
-	padding-top: 50px;
+	padding-top: 40px;
 	padding-bottom: 5px;
 	padding-right: 10px;
 	font-weight: bold;
@@ -73,7 +73,7 @@ body {
 #main {
 	float: left;
 	clear: left;
-	width: 700px;
+	width: 820px;
 	height: auto;
 	background-color: #79A5C6;
 }
@@ -92,12 +92,12 @@ body {
 }
 .project {
 	clear: both;
-	width: 590px;
+	width: 650px;
 	padding-top: 10px;
 	padding-right: 10px;
 }
 .projectTitle {
-	width: 470px;
+	width: 530px;
 	height: 20px;
 	padding-left: 120px;
 	font-weight: bold;
@@ -109,24 +109,38 @@ body {
 	text-align: right;
 }
 .projectContent {
-	width: 470px;
+	width: 530px;
 	background: url(../art/tablebackground.gif) #ffffff;
 }
 .projectText {
 	padding: 5px;
-	width: 280px;
+	width: 340px;
 	min-height: 100px;
-	height:auto !important;  /* für moderne Browser */
-    height:100px;  /*für den IE */
+	height:auto !important;  /* fÃ¼r moderne Browser */
+    height:100px;  /*fÃ¼r den IE */
 }
 .projectImg {
 	width: 180px;
 }
-
+#mainFooter {
+    margin-left: auto;
+    float: left;
+    width: 600px;
+    height: auto;
+    background-color: #ffffff;
+    text-align: left;
+    margin-left:100px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 120px;
+    font-size:9px;
+    color:#777;
+    border-top:1px dotted #FF6600;
+}
 #content {
 	margin-left: auto;
 	float: left;
-	width: 600px;
+	width: 720px;
 	height: auto;
 	background-color: #ffffff;
 	text-align: left;
@@ -148,7 +162,7 @@ body {
 .contentSmallText {
 	padding-top: 10px;
 	clear: both;
-	padding-right: 200px;
+	padding-right: 80px;
 }
 .contentList {
 	clear: both;
@@ -166,7 +180,7 @@ body {
 .contentMainText {
 	float: left;
 	padding-left: 0px;
-	width: 380px;
+	width: 500px;
 	padding-bottom: 7px;
 }
 
@@ -174,7 +188,7 @@ body {
 	margin-left: 30px;
 	float: left;
 	height: auto;
-	width: 380px;
+	width: 620px;
 	background: url(../art/tablebackground.gif) #ffffff;
 }
 .contentInput {
@@ -183,7 +197,7 @@ body {
 	padding-top: 4px;
 	padding-bottom: 4px;
 	height: auto;
-	width: 360px;
+	width: 600px;
 	
 }
 .inputText {
@@ -202,20 +216,25 @@ body {
 	height: auto;
 	width: 160px;
 }
-.skillFrame {
-	float: left;
-	clear: both;
-	margin-left: 60px;
+.skillFrame, .skillNoFrame {
 	margin-top: 10px;
-	margin-bottom: 10px; 
-	margin-right: 50px;
-	padding-left: 40px;
 	padding-top: 5px;
-	padding-bottom: 5px;
-	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	padding-left: 20px;
 	background: url(../art/tablebackground.gif) #ffffff;
 	height: auto;
-	width: 280px;
+	width: 250px;
+}
+.skillFrame {
+    float: left;
+    clear: both;
+    margin-left: 100px;
+    margin-bottom: 10px; 
+    margin-right: 20px;
+}
+.skillNoFrame {
+	float: left;
 }
 .skillTitle {
 	float: left;
@@ -267,5 +286,18 @@ a.navlink:visited	{ color:#FFFFFF;
 				font-weight: bold;
 				text-decoration:none;
 				}
+a.footerlink   {
+    color:#777;
+    text-decoration:none
+    }
+a.footerlink:hover     { color:#FF6600; 
+                text-decoration:underline;
+                }
+a.footerlink:active    { color:#777;
+                text-decoration:none;
+                }
+a.footerlink:visited   { color:#777;
+                text-decoration:none;
+                }
 .orange			{ color:#FF6600; }
 .fehler			{ color:#FF0000; }
