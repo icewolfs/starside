@@ -170,9 +170,9 @@ if (count($rows) != 1) {
         //you must have comments turned on (in settings.php) for this to display
         if($COMMENTS){
             if($row[5] != 0){
-                $allEntries .= "<p class=\"userComment\"><a href=\"javascript:void();\" onclick=\"window.open('comments.php?entry=$row[4]', 'Comments', 'width=490,height=350,location=no,toolbars=no,status=no scrollbars=yes');\">$row[5] comments</a> | <a href=\"javascript:void();]\" onclick=\"window.open('comments.php?entry=$row[4]', 'Comments', 'width=490,height=350,location=no,toolbars=no,status=no, scrollbars=yes');\">Comment</a><a class=\"permalink\" href=\"$blogPageName?entry=$row[4]\">permalink</a></p>";
+                $allEntries .= "<p class=\"userComment\"><a href=\"javascript:void();\" onclick=\"window.open('comments.php?entry=$row[4]', 'Comments', 'width=490,height=600,location=no,toolbars=no,status=no scrollbars=yes');\">$row[5] comments</a> | <a href=\"javascript:void();]\" onclick=\"window.open('comments.php?entry=$row[4]', 'Comments', 'width=490,height=650,location=no,toolbars=no,status=no, scrollbars=yes');\">Comment</a><a class=\"permalink\" href=\"$blogPageName?entry=$row[4]\">permalink</a></p>";
             }else{
-                $allEntries .= "<p class=\"userComment\">$row[5] comments | <a href=\"javascript:void();\" onclick=\"window.open('comments.php?entry=$row[4]', 'Comments', 'width=490,height=350,location=no,toolbars=no,status=no, scrollbars=yes');\">Comment</a><a class=\"permalink\" href=\"$blogPageName?entry=$row[4]\">permalink</a></p>";
+                $allEntries .= "<p class=\"userComment\">$row[5] comments | <a href=\"javascript:void();\" onclick=\"window.open('comments.php?entry=$row[4]', 'Comments', 'width=490,height=600,location=no,toolbars=no,status=no, scrollbars=yes');\">Comment</a><a class=\"permalink\" href=\"$blogPageName?entry=$row[4]\">permalink</a></p>";
             }
         }
         

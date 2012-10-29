@@ -6,7 +6,7 @@ body{
     background: url(../art/background.gif) top left #ffffff;
     font-size: 11px;
     font-family: Verdana,Arial,sans-serif;
-    color:#ffffff;
+    color:#00000;
 }
 
 #container{width:680px; margin:0 auto; background-color:#fff; border:3px double #555; border-top:0;}

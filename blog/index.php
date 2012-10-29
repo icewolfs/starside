@@ -377,9 +377,9 @@ while ($row = mysql_fetch_array($result, MYSQL_NUM)) {
     //you must have comments turned on (in settings.php) for this to display
     if($COMMENTS){
         if($row[5] != 0){
-            $entryComments .= "<p class=\"userComment\"><a href=\"javascript:void(function(){var super = 'simple';});\" onclick=\"window.open('comments.php?entry=$row[4]', 'Comments', 'width=490,height=350,location=no,toolbars=no,status=no scrollbars=yes');\">$row[5] comments</a> | <a href=\"javascript:void(function(){var super = 'simple';});\" onclick=\"window.open('comments.php?entry=$row[4]', 'Comments', 'width=490,height=350,location=no,toolbars=no,status=no, scrollbars=yes');\">Comment</a><a class=\"permalink\" href=\"$blogPageName?entry=$row[4]\">permalink</a></p>";
+            $entryComments .= "<p class=\"userComment\"><a href=\"javascript:void(function(){var super = 'simple';});\" onclick=\"window.open('comments.php?entry=$row[4]', 'Comments', 'width=490,height=600,location=no,toolbars=no,status=no scrollbars=yes');\">$row[5] comments</a> | <a href=\"javascript:void(function(){var super = 'simple';});\" onclick=\"window.open('comments.php?entry=$row[4]', 'Comments', 'width=490,height=600,location=no,toolbars=no,status=no, scrollbars=yes');\">Comment</a><a class=\"permalink\" href=\"$blogPageName?entry=$row[4]\">permalink</a></p>";
         }else{
-            $entryComments .= "<p class=\"userComment\">$row[5] comments | <a href=\"javascript:void(function(){var super = 'simple';});\" onclick=\"window.open('comments.php?entry=$row[4]', 'Comments', 'width=490,height=350,location=no,toolbars=no,status=no, scrollbars=yes');\">Comment</a><a class=\"permalink\" href=\"$blogPageName?entry=$row[4]\">permalink</a></p>";
+            $entryComments .= "<p class=\"userComment\">$row[5] comments | <a href=\"javascript:void(function(){var super = 'simple';});\" onclick=\"window.open('comments.php?entry=$row[4]', 'Comments', 'width=490,height=600,location=no,toolbars=no,status=no, scrollbars=yes');\">Comment</a><a class=\"permalink\" href=\"$blogPageName?entry=$row[4]\">permalink</a></p>";
         }
     }
     

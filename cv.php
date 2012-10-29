@@ -52,7 +52,7 @@ require_once('lang/lang_'.$lan.'.inc.php');
   
   <div id="main">
     <div id="side">
-      <img src="art/frank_neu.jpg">
+      <img src="art/Frank_wmhh_micro.jpg">
     </div>
     <div id="content">
       <div class="contentTitle"><?php echo $cv_personal_title ?></div>
