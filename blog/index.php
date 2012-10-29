@@ -133,17 +133,16 @@ if($userPassed){//check the password and username
 
 //****INSERT INTO DB***********************************************************************
 
-    if($_db_operation == 'insert'){
-    //Add the record to the database.
-    $query = "INSERT INTO $TABLENAME (comment, title, image, time, postedBy) VALUES ('$c', '$t', '$filename', '$OFFSETTIME', '$un' )";
-    $result = @mysql_query($query);
-    echo '<h1>Comment added</h1>';
-    }
-    else if($_db_operation == 'update'){
-    //Update the record to the database.
-    $query = "UPDATE $TABLENAME SET comment = '$c' , title = '$t', image = '$filename', time = '$time', postedBy = '$un' WHERE $editCol = '$uid'";
-    $result = @mysql_query ($query);
-    echo '<h1>Comment added</h1>';
+    if ($_db_operation == 'insert') {
+        //Add the record to the database.
+        $query = "INSERT INTO $TABLENAME (comment, title, image, time, postedBy) VALUES ('$c', '$t', '$filename', '$OFFSETTIME', '$un' )";
+        $result = @mysql_query($query);
+        echo '<h1>Comment added</h1>';
+    } else if ($_db_operation == 'update') {
+        //Update the record to the database.
+        $query = "UPDATE $TABLENAME SET comment = '$c' , title = '$t', image = '$filename', time = '$time', postedBy = '$un' WHERE $editCol = '$uid'";
+        $result = @mysql_query ($query);
+        echo '<h1>Comment added</h1>';
     }
 
 
@@ -325,19 +324,18 @@ while ($row = mysql_fetch_array($result, MYSQL_NUM)) {
 
     //anchor tag set for easier linking
     $entryTitle  = "<a id=\"{$row[4]}\"></a><h1 class=\"title\">{$row[2]}</h1>\n<p class=\"time\">$dateTime</p>";
-//     $entryTitle .= "";
 
     $entry = '';
     $ima = preg_split("/, /", $row[1]); //build array out of images list
-    for($i=0; $i<count($ima); $i++){
-        if(!empty($ima[$i])) {
-            if(substr($ima[$i],-4) != '.pdf'){ //filter out PDFs
-                $entry .= "<img src=\"blogImages/$ima[$i]\" class=\"im\" alt=\"$ima[$i]\" />\n</br>\n";
-            } else { //handle PDFs
-                $entry .= "<a href=\"blogImages/$ima[$i]\" target=\"_blank\"><img src=\"im/pdfIcon.gif\" border=\"0\" class=\"im\" alt=\"PDF\" /> $ima[$i]</a>";
-            }
-        }
-    }
+//     for($i=0; $i<count($ima); $i++){
+//         if(!empty($ima[$i])) {
+//             if(substr($ima[$i],-4) != '.pdf'){ //filter out PDFs
+//                 $entry .= "<img src=\"blogImages/$ima[$i]\" class=\"im\" alt=\"$ima[$i]\" />\n</br>\n";
+//             } else { //handle PDFs
+//                 $entry .= "<a href=\"blogImages/$ima[$i]\" target=\"_blank\"><img src=\"im/pdfIcon.gif\" border=\"0\" class=\"im\" alt=\"PDF\" /> $ima[$i]</a>";
+//             }
+//         }
+//     }
     //****************************************************************************************
     
     
