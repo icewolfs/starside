@@ -59,21 +59,6 @@ require_once('lang/lang_'.$lan.'.inc.php');
       <div class="contentText"><?php echo $cv_name ?></div>
       <div class="contentText"><?php echo $cv_born ?></div>
       
-      <div class="contentTitle"><?php echo $cv_school_title ?></div>
-      <div class="contentPreText">08/82 - 06/86</div>
-      <div class="contentMainText"><?php echo $cv_grundschule ?></div>
-      <div class="contentPreText">08/86 - 06/95</div>
-      <div class="contentMainText"><?php echo $cv_schule ?></div>
-      
-      <div class="contentTitle"><?php echo $cv_mil_title ?></div>
-      <div class="contentPreText">07/95 - 06/96</div>
-      <div class="contentMainText"><?php echo $cv_military ?></div>
-      
-      
-      <div class="contentTitle"><?php echo $cv_job_training_title ?></div>
-      <div class="contentPreText">09/96 - 01/99</div>
-      <div class="contentMainText"><?php echo $cv_job_training ?></div>
-      
       <div class="contentTitle"><?php echo $cv_jobs_title ?></div>
       <div class="contentPreText">08/11 - 01/13</div>
       <div class="contentMainText"><?php echo $cv_jobs_bigpoint ?></div>
@@ -98,6 +83,22 @@ require_once('lang/lang_'.$lan.'.inc.php');
       <div class="contentPreText">02/99 - 01/00</div>
       <div class="contentMainText"><?php echo $cv_job_tkis ?></div>
       
+      <div class="contentTitle"><?php echo $cv_job_training_title ?></div>
+      <div class="contentPreText">10/06 - 05/08</div>
+      <div class="contentMainText"><?php echo $cv_ait_itprof ?></div>
+      <div class="contentPreText">09/96 - 01/99</div>
+      <div class="contentMainText"><?php echo $cv_job_training ?></div>
+      
+      <div class="contentTitle"><?php echo $cv_misc_title ?></div>
+      <div class="contentPreText"><?php echo $cv_phpughh ?></div>
+      <div class="contentMainText"><?php echo $cv_phpughhorga ?></div>
+      <div class="contentPreText"><?php echo $cv_presentations ?></div>
+      <div class="contentMainText"><?php echo $cv_slideshare ?></div>
+      <div class="contentPreText"><?php echo $cv_languages ?></div>
+      <div class="contentMainText"><?php if ($lan == 'en') echo $cv_german.'<br/>'; ?><?php echo $cv_english ?></div>
+      <!-- <div class="contentPreText"><?php echo $cv_interest_title ?></div>
+      <div class="contentMainText"><?php echo $cv_interests ?></div> -->
+      
       <div class="contentTitle"><?php echo $cv_edu_title ?></div>
       <div class="contentPreText">2012</div>
       <div class="contentMainText"><?php echo $cv_phpsummit ?><br/><?php echo $cv_phpunconf12 ?></div>
@@ -105,8 +106,6 @@ require_once('lang/lang_'.$lan.'.inc.php');
       <div class="contentMainText"><?php echo $cv_phpunconf11 ?><br/><?php echo $cv_zend ?></div>
       <div class="contentPreText">2009</div>
       <div class="contentMainText"><?php echo $cv_devdays ?></div>
-      <div class="contentPreText">10/06 - 05/08</div>
-      <div class="contentMainText"><?php echo $cv_ait_itprof ?></div>
       <div class="contentPreText">2007</div>
       <div class="contentMainText"><?php echo $cv_itil ?></div>
       <div class="contentPreText">2004</div>
@@ -122,15 +121,15 @@ require_once('lang/lang_'.$lan.'.inc.php');
       <div class="contentPreText">1999</div>
       <div class="contentMainText"><?php echo $cv_java ?><br/><?php echo $cv_sql ?></div>
       
-      <div class="contentTitle"><?php echo $cv_misc_title ?></div>
-      <div class="contentPreText"><?php echo $cv_phpughh ?></div>
-      <div class="contentMainText"><?php echo $cv_phpughhorga ?></div>
-      <div class="contentPreText"><?php echo $cv_presentations ?></div>
-      <div class="contentMainText"><?php echo $cv_slideshare ?></div>
-      <div class="contentPreText"><?php echo $cv_languages ?></div>
-      <div class="contentMainText"><?php if ($lan == 'en') echo $cv_german.'<br/>'; ?><?php echo $cv_english ?></div>
-      <div class="contentPreText"><?php echo $cv_interest_title ?></div>
-      <div class="contentMainText"><?php echo $cv_interests ?></div>
+      <div class="contentTitle"><?php echo $cv_school_title ?></div>
+      <div class="contentPreText">08/82 - 06/86</div>
+      <div class="contentMainText"><?php echo $cv_grundschule ?></div>
+      <div class="contentPreText">08/86 - 06/95</div>
+      <div class="contentMainText"><?php echo $cv_schule ?></div>
+      
+      <div class="contentTitle"><?php echo $cv_mil_title ?></div>
+      <div class="contentPreText">07/95 - 06/96</div>
+      <div class="contentMainText"><?php echo $cv_military ?></div>
       
     </div>
   </div>

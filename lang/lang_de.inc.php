@@ -33,11 +33,12 @@ $cv_schule = '<a href="http://www.kdg-wesel.de/" target="_blank"><span class="or
 $cv_mil_title = 'WEHRDIENST';
 $cv_military  = '12-monatiger Wehrdienst in der Schillkaserne Wesel';
 
-$cv_job_training_title = 'BERUFSAUSBILDUNG';
+$cv_job_training_title = 'AUS- UND FORTBILDUNG';
 $cv_job_training  = 'Ausbildung zum Datenverarbeitungskaufmann bei der Firma ';
 $cv_job_training .= '<a href="http://www.elastoform.de" target="_blank"><span class="orange">&gt;</span>&nbsp;';
 $cv_job_training .= 'Elastoform</a> in Duisburg Rheinhausen.<br>';
 $cv_job_training .= '&Uuml;bergreifende Berufsbildung durch den ThyssenKrupp Ausbildungsverbund Duisburg.<br>';
+$cv_ait_itprof    = 'Fortbildung IT-Operative Professional "System-Manager" bei der <a href="http://www.ait-essen.de" target="_blank"><span class="orange">&gt;</span> Akademie f&uuml;r Informations- und Telekommunikationstechnik in Essen.</a> Abschlussprojektarbeit zum Thema <i>&quot;Bewertungsrichtlinien f&uuml;r die Qualit&auml;t von Java-Entwicklungen&quot;</i>';
 
 $cv_jobs_title = 'BERUFSERFAHRUNG';
 $cv_job_tkis  = 'Anwendungsentwickler bei der Firma <a href="http://www.tkis.de" target="_blank"><span class="orange">&gt;</span>&nbsp;ThyssenKrupp&nbsp;Information&nbsp;Services</a> in Krefeld.<br>';
@@ -76,14 +77,13 @@ $cv_jobs_bigpoint  = 'Senior Software Engineer (PHP) und Interim PHP Lead bei de
 $cv_jobs_bigpoint .= 'Technische Verantwortlichkeit f&uuml;r Konzeption, Architektur und Backend Entwicklung von internen Projekten.</br>';
 $cv_jobs_bigpoint .= 'Plannung und Durchf&uuml;rung von internen Workshops zur Weiterentwicklung der PHP und Java Entwickler. Einf&uuml;rung von Continuous Intergration, Unit Testing, Coding Standards und Code Reviews im Projektprozess. Regelm&auml;ssige interne Vortr&auml;ge zur Wissensvermittlung zu verschiedenen Themen.';
 
-$cv_edu_title = 'FORTBILDUNGEN';
+$cv_edu_title = 'KONFERENZEN UND SCHULUNGEN';
 $cv_phpunconf12 = 'Teilnahme, inklusive eigener Vortr&auml;ge, an der PHP Unconference 2012 in Hamburg';
 $cv_phpsummit = 'Teilnahme an der PHP Summit Spring Edition 2012 in M&uuml;nchen';
 $cv_zend = 'Zend Inhouse Training f&uuml;r das Zend Framework';
 $cv_phpunconf11 = 'Teilnahme an der PHP Unconference 2011 in Hamburg';
 $cv_devdays = 'Teilnahme an den Stackoverflow DevDays in Amsterdam';
 $cv_itil = 'ITIL Foundation Zertifizierung';
-$cv_ait_itprof = 'Fortbildung IT-Operative Professional "System-Manager" bei der <a href="http://www.ait-essen.de" target="_blank"><span class="orange">&gt;</span> Akademie f&uuml;r Informations- und Telekommunikationstechnik in Essen.</a> Abschlussprojektarbeit zum Thema <i>&quot;Bewertungsrichtlinien f&uuml;r die Qualit&auml;t von Java-Entwicklungen&quot;</i>';
 $cv_meta_consult = 'Consulting Certification Training';
 $cv_imperia = 'Administrator-Schulung f&uuml;r das CMS Imperia';
 $cv_uml = 'Seminar "UML - Unified Modeling Language"';
@@ -94,7 +94,7 @@ $cv_java_servlet = 'Seminar f&uuml;r Java Servlet Programmierung';
 $cv_java = 'Lehrgang f&uuml;r Programmierung in Java';
 $cv_sql = 'Lehrgang f&uuml;r Programmierung in SQL';
 
-$cv_misc_title = 'SONSTIGES';
+$cv_misc_title = 'KOMPETENZEN';
 $cv_phpughh = 'PHP Usergroup';
 $cv_phpughhorga = 'Organisator der <a href="http://www.meetup.com/phpughh/" target="_blank"><span class="orange">&gt;</span> PHP Usergroup Hamburg.</a>';
 $cv_presentations = 'Pr&auml;sentationen';
