@@ -4,16 +4,16 @@ include("config/sqlStrings.php");
 include('config/settings.php');
 
 
-//****************************************************************************************	
+//****************************************************************************************
 
-//*****STORE THE UID**********************************************************************	
+//*****STORE THE UID**********************************************************************
 
 //store GET var
 $uid = mysql_real_escape_string($_GET['entry']);
 
-//****************************************************************************************	
+//****************************************************************************************
 
-//****GET THE CURRENT COMMENT COUNT*******************************************************	
+//****GET THE CURRENT COMMENT COUNT*******************************************************
 
 	//get the current count of comments
 	$query = "SELECT comments, time from $TABLENAME where uid = $uid";
@@ -23,7 +23,7 @@ $uid = mysql_real_escape_string($_GET['entry']);
 	$origTime = $row[1];
 	}
 	
-//****************************************************************************************	
+//****************************************************************************************
 
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -51,7 +51,7 @@ copyright 2006
 
 <?php
 
-//****HANDLE FORM********************************************************************	
+//****HANDLE FORM********************************************************************
 
 if (isset($_POST['submit']) ){ // Handle the form.
 
@@ -74,22 +74,23 @@ if (isset($_POST['submit']) ){ // Handle the form.
 	}
 	if(!empty($_POST['comment'])){
 		$c = strip_tags(stripslashes(nl2br($_POST['comment'])));
+		$c = nl2br($c);
 	}else{
 		$err=true;
 		$errors .= '<br />comment was not set';
 	}
-//****************************************************************************************	
+//****************************************************************************************
 
-//****CHECK FOR ERRORS********************************************************************	
+//****CHECK FOR ERRORS********************************************************************
 
 	if($err){echo "<p>$errors</p>";
 	}else{//there are no errors
 	
 	$d=date('M j, Y g:ia');
 
-//****************************************************************************************	
+//****************************************************************************************
 	
-//****BUILD A STRING TO WRITE TO FILE*****************************************************	
+//****BUILD A STRING TO WRITE TO FILE*****************************************************
 	
 	//build the string to be written
 	$comStr = <<<EOT
@@ -99,26 +100,26 @@ if (isset($_POST['submit']) ){ // Handle the form.
 	<p class="hr"></p>
 EOT;
 	
-//****************************************************************************************	
+//****************************************************************************************
 
 
-//****WORK WITH THE FLAT FILE*************************************************************	
+//****WORK WITH THE FLAT FILE*************************************************************
 
-	//open or create a file 
+	//open or create a file
 	$commentFile = fopen("$baseURL/comments/$uid.com", 'a') or die('Cannot open comments file');
 	fwrite($commentFile, $comStr) or die('Cannot write to file');
 	fclose($commentFile);
 
-//****************************************************************************************	
+//****************************************************************************************
 
-//****INCREMENT THE COMMENT COUNT IN THE DATABASE*****************************************	
+//****INCREMENT THE COMMENT COUNT IN THE DATABASE*****************************************
 		
 	//update the count in the database
 	$newCount = $origCount + 1;
 	$query = "UPDATE $TABLENAME SET comments = '$newCount', time = '{$_POST['orig_time']}' WHERE uid = '$uid'";
 	$result = @mysql_query ($query);
 	
-//****************************************************************************************	
+//****************************************************************************************
 
 //****REFRESH THE PARENT WINDOW TO SHOW NEW COUNT*****************************************
 echo "<script type=\"text/javascript\">this.opener.location.reload();</script>";
@@ -131,7 +132,7 @@ echo "<script type=\"text/javascript\">this.opener.location.reload();</script>";
 <h2>Comments</h2>
 <?php
 
-//****IF COMMENTS EXIST, DISPLAY THEM*****************************************************	
+//****IF COMMENTS EXIST, DISPLAY THEM*****************************************************
 
 if($origCount != 0 || $submit){
 include('comments/'.$uid.'.com');
@@ -139,7 +140,7 @@ include('comments/'.$uid.'.com');
 echo "No comments to display";
 }
 
-//****************************************************************************************	
+//****************************************************************************************
 
 ?>
 <fieldset>
