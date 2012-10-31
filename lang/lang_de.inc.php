@@ -75,7 +75,7 @@ $cv_jobs_icans .= 'Projektleitung und Entwicklung von PHP B2B Projekten und eine
 
 $cv_jobs_bigpoint  = 'Senior Software Engineer (PHP) und Interim PHP Lead bei der <a href="http://www.bigpoint.net/" target="_blank"><span class="orange">&gt;</span>&nbsp;Bigpoint&nbsp;GmbH</a> in Hamburg.<br>';
 $cv_jobs_bigpoint .= 'Technische Verantwortlichkeit f&uuml;r Konzeption, Architektur und Backend Entwicklung von internen Projekten.</br>';
-$cv_jobs_bigpoint .= 'Plannung und Durchf&uuml;rung von internen Workshops zur Weiterentwicklung der PHP und Java Entwickler. Einf&uuml;rung von Continuous Intergration, Unit Testing, Coding Standards und Code Reviews im Projektprozess. Regelm&auml;ssige interne Vortr&auml;ge zur Wissensvermittlung zu verschiedenen Themen.';
+$cv_jobs_bigpoint .= 'Planung und Durchf&uuml;hrung von internen Workshops zur Weiterentwicklung der PHP und Java Entwickler. Einf&uuml;hrung von Continuous Integration, Unit Testing, Coding Standards und Code Reviews im Projektprozess. Regelm&auml;ssige interne Vortr&auml;ge zur Wissensvermittlung zu verschiedenen Themen.';
 
 $cv_edu_title = 'KONFERENZEN UND SCHULUNGEN';
 $cv_phpunconf12 = 'Teilnahme, inklusive eigener Vortr&auml;ge, an der PHP Unconference 2012 in Hamburg';
