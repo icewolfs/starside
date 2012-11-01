@@ -97,13 +97,13 @@ require_once('lang/lang_'.$lan.'.inc.php');
         <div class="skill">Ant</div>
         <div class="skillValue"><?php echo $sk_basic ?></div>
         <div class="skill">Apache</div>
-        <div class="skillValue"><?php echo $sk_good ?></div>
+        <div class="skillValue"><?php echo $sk_very_good ?></div>
         <div class="skill">Composer</div>
         <div class="skillValue"><?php echo $sk_basic ?></div>
         <div class="skill">Eclipse/Zend Studio</div>
         <div class="skillValue"><?php echo $sk_very_good ?></div>
         <div class="skill">JBoss</div>
-        <div class="skillValue"><?php echo $sk_good ?></div>
+        <div class="skillValue"><?php echo $sk_very_good ?></div>
         <div class="skill">Netbeans</div>
         <div class="skillValue"><?php echo $sk_basic ?></div>
         <div class="skill">Tomcat</div>
@@ -120,7 +120,7 @@ require_once('lang/lang_'.$lan.'.inc.php');
       <div class="skillNoFrame">
         <div class="skillTitle"><?php echo $sk_db ?></div>
         <div class="skill">MsSQL</div>
-        <div class="skillValue"><?php echo $sk_basic ?></div>
+        <div class="skillValue"><?php echo $sk_good ?></div>
         <div class="skill">MySQL</div>
         <div class="skillValue"><?php echo $sk_very_good ?></div>
         <div class="skill">Oracle</div>
